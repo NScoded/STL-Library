@@ -11,7 +11,9 @@ int main(){
     test t;
     string h;
     string *t1;
-    cout<<sizeof(t1);
+    char c[10];
+    cout<<c[2];
+    cout<<sizeof(string);
 
     // LinkedList<int>l;
     // l.append(1);
