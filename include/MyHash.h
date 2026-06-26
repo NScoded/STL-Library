@@ -5,16 +5,13 @@
 #include <cstddef>
 #include <iostream>
 
+size_t i=0;
 template<typename T>
 struct MyHash {
 
-    size_t operator()(const T&) const {
-
-        static_assert(sizeof(T) == 0,
-            "No hash function defined for this type. "
-            "Please specialize MyHash<T>.");
-
-        return 0;
+    size_t operator()(const T& key) const {
+        return reinterpret_cast<size_t>(this);
+        
     }
 };
 

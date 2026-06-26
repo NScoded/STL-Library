@@ -11,7 +11,7 @@ template<typename T> class DynamicArray{
     int cap;
     T * arr ;
     DynamicArray();// Constructor
-    DynamicArray(int cap,T val);// Constructor
+    DynamicArray(int cap,T val);// Constructor with capacity and value
     DynamicArray(const DynamicArray& other); //Copy Constructor
     DynamicArray& operator=(const DynamicArray& other); //Copy Assignment Constructor
     T& operator [](int index); // operator [] with =

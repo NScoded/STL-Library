@@ -27,21 +27,32 @@ The APIs are designed to provide commonly used operations while keeping the impl
 
 ```cpp
 template<typename T> class DynamicArray{
-    public:
 
+    private:
+    void resize();
+    void destroyAndFree(T * arr,int count);
+    
+    public:
+    int len;
+    int cap;
+    T * arr ;
     DynamicArray();// Constructor
+    DynamicArray(int cap,T val);// Constructor with capacity and value
     DynamicArray(const DynamicArray& other); //Copy Constructor
-    DynamicArray(DynamicArray&& other); // Move Constructor
+    DynamicArray& operator=(const DynamicArray& other); //Copy Assignment Constructor
+    T& operator [](int index); // operator [] with =
+    bool operator==(const DynamicArray &others)const;
+    const T& operator [](int index) const; // const operator []
     ~DynamicArray(); //Destructor
-    void push_back(T value); //Add value at last
-    void insert(int index, T value); //Add value at given index
+    void push_back(const T& value); //Add value at last
+    void insert(int index, const T& value); //Add value at given index
     void remove(int index);// Delete value by index
     void pop_back(); // Delete last element
-    T get(int index);// return value at given index
-    int size(); // return number of elements inserted
-    int capacity();// returns total capacity of array
+    int size() const; // return number of elements inserted
+    int capacity()const;// returns total capacity of array
     void clear(); // remove all elements
 };
+
 ```
 ## LinkedList  
 
@@ -49,28 +60,43 @@ template<typename T> class DynamicArray{
 ```cpp   
 template<typename T>class LinkedList{
 
+    template<typename>
+    friend struct MyHash;
+
+    template<typename,typename>
+    friend class HashMap;
     private:
     struct Node{
         T data;
         Node*next;
         Node(T val);
-    }
+        
+    };
+    
+    
     public:
+    
+    // 10 methods
     Node*head=nullptr;
     Node*tail=nullptr;
-    int size=0;
+    int size;
     LinkedList(); //Constructor
-    LinkedList(const LinkedList& other); // Copy Constructor
-    LinkedList(LinkedList&& other); // Move Constructor 
     ~LinkedList(); // Destructor
-    void insertFront(T value); //Insert value at front
-    void deleteFront(); // Delete first value
+    LinkedList(const LinkedList& other); // Copy Constructor
+    LinkedList& operator=(const LinkedList& other); // Handling assignment operator
+    bool operator==(const LinkedList<T>& other) const;
+    void insertHead(T value); //Insert value at front
+    void remove(T val); // Delete value
     void insert(int pos, T value); //Insert value at given position
-    void append(T value); // Insert value at last
+    void append(T value); // Add element at last
+    void pop();// Delete last element
+    void reverse(); // Reverse the LinkedList
     bool exists(T value); //returns true of value exists otherwise returns false 
-    int size(); //return size of the linkedlist
-    void reverse()// reverse the LinkedList
-    void print(); // print the linkedlist
+    int length(); //return size of the linkedlist
+    void clear();// Delete all elements
+    void print(); // print the linkedlist(for testing)
+
+
 };
 ```
 
@@ -81,22 +107,33 @@ The current implementation uses a **singly linked list** because it provides a s
 ## HashMap
 
 ```cpp
-template <typename K , typename V> class HashMap {
-    
-    public:
-    HashMap(); // Constructor
-    HashMap(const HashMap& other); // Copy Constructor
-    HashMap& operator=(const HashMap& other); // Handling assignment operator
-    ~HashMap(); // Destructor
-    void insert(K key,V value); // Insert key-value pair
-    V get(K key); //return value by key
-    bool exists(const K& key) const; //returns true if key exists
-    void remove(K key); // delete key-value pair
-    int size() const; // returns the size of hashtable
-    int capacity() const; // returns the total capacity of hash table
-    float loadFactor() const; // returns the value of load factor
-    void clear(); // clear the entire hashmap
-    
+template<typename K, typename V>
+class HashMap {
+
+private:
+    struct Pair {
+        K key;
+        V value;
+        Pair(K k, V v);
+        bool operator==(const Pair& other) const {
+            return key == other.key;
+        }
+    };
+    DynamicArray<LinkedList<Pair>> buckets;
+    int bucketCount;
+    int elementCount;
+    size_t hash(const K& key) const;
+    void rehash();
+public:
+    HashMap(int capacity = 16);
+    void insert(const K& key, const V& value);
+    bool remove(const K& key);
+    bool exists(const K& key) const;
+    V& get(const K& key);
+    int size() const;
+    int capacity() const;
+    float loadFactor() const;
+    void clear();
 };
 ```
 
