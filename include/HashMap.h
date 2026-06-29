@@ -17,7 +17,7 @@ private:
     struct Pair {
         K key;
         V value;
-
+ 
         Pair(K k, V v);
 
         bool operator==(const Pair& other) const {

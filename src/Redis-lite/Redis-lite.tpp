@@ -8,7 +8,8 @@ using namespace std;
 // Run
 template<typename K,typename V> void Redis_lite<K,V>::run(){
     cout<<"---------- Redis-Lite Database server stated ----------\n";
-    cout<<"Methods availabe\nSET _ _\nGET _\nEXISTS _\nDEL _\n";
+    cout<<"Methods availabe\nSET _ _\nGET _\nEXISTS _\nDEL _\nCLEAR \nSIZE\nEXIT\n";
+    cout<<"-------------------------------------------------------\n";
     while(true){
         string input;
         string method;
@@ -50,11 +51,14 @@ template<typename K,typename V> void Redis_lite<K,V>::run(){
 
         }
 
+        else if (method=="exit"){
+            cout<<"Good Bye...";
+            break;
+        }
+
         else{
             cout<<"Enter valid operation\n";
         }
-
-        
 
 
     }

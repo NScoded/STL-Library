@@ -57,8 +57,8 @@ void HashMap<K,V>::insert(const K& key, const V& value)
     }
     // same key nahi mili to last me new pair append kardo
     bucket.append(Pair(key, value));
-
     elementCount++;
+
 
     if(loadFactor() > 0.75f)
         rehash();

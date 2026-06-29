@@ -76,7 +76,7 @@ template<typename T>class LinkedList{
     
     public:
     
-    // 10 methods
+
     Node*head=nullptr;
     Node*tail=nullptr;
     int size;
@@ -180,8 +180,8 @@ The destructor `traverses` every bucket, deletes all nodes in the chains, and fi
 Copy operations perform a deep copy by allocating a new bucket array and duplicating all key-value pairs.
 
 
-![Hashmap1](images/Hashmap1.jpg)
-![Hashmap2](images/Hashmap2.jpg)
+![Hashmap1](images/Hashmap_v2.jpg)
+
 
 ### Copy Operations
 
