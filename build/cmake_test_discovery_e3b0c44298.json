@@ -1,7 +1,145 @@
 {
-  "tests": 149,
+  "tests": 167,
   "name": "AllTests",
   "testsuites": [
+    {
+      "name": "RedisLiteToLowerTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "ConvertUpperCase",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ToLowerTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "MixedCase",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ToLowerTests.cpp",
+          "line": 11
+        },
+        {
+          "name": "AlreadyLowerCase",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ToLowerTests.cpp",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "name": "RedisLiteSizeTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "EmptyDatabase",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\SizeTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "AfterInsertion",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\SizeTests.cpp",
+          "line": 11
+        },
+        {
+          "name": "AfterDeletion",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\SizeTests.cpp",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "name": "RedisLiteGetTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "ExistingKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\GetTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "NonExistingKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\GetTests.cpp",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "name": "RedisLiteExistsTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "NonExistingKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ExistsTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "ExistingKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ExistsTests.cpp",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "name": "RedisLiteDeleteTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "DeleteExistingKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\DeleteTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "DeleteNonExistingKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\DeleteTests.cpp",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "name": "RedisLiteClearTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "ClearDatabase",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ClearTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "ClearEmptyDatabase",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ClearTests.cpp",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "name": "RedisLiteSetTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "SetSingleKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\SetTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "SetMultipleKeys",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\SetTests.cpp",
+          "line": 14
+        },
+        {
+          "name": "UpdateExistingKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\SetTests.cpp",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "name": "RedisLiteConstructorTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "DefaultConstructor",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ConstructorTests.cpp",
+          "line": 4
+        }
+      ]
+    },
     {
       "name": "HashMapGetTest",
       "tests": 8,

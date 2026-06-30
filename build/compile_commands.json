@@ -174,6 +174,54 @@
   "output": "CMakeFiles/Tests.dir/tests/HashMap/GetTests.cpp.obj"
 },
 {
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\Redis-lite\\ConstructorTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ConstructorTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/Redis-lite/ConstructorTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\Redis-lite\\SetTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\Redis-lite\\SetTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/Redis-lite/SetTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\Redis-lite\\ClearTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ClearTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/Redis-lite/ClearTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\Redis-lite\\DeleteTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\Redis-lite\\DeleteTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/Redis-lite/DeleteTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\Redis-lite\\ExistsTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ExistsTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/Redis-lite/ExistsTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\Redis-lite\\GetTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\Redis-lite\\GetTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/Redis-lite/GetTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\Redis-lite\\SizeTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\Redis-lite\\SizeTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/Redis-lite/SizeTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\Redis-lite\\ToLowerTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ToLowerTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/Redis-lite/ToLowerTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.obj"
+},
+{
   "directory": "D:/Git pull/STL-Library/build/googletest-build/googlemock",
   "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\gmock.dir\\includes_CXX.rsp -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\testing\\googletest\\googlemock\\src\\gmock-all.cc",
   "file": "C:/testing/googletest/googlemock/src/gmock-all.cc",

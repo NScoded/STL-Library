@@ -66,7 +66,7 @@ template<typename K,typename V> void Redis_lite<K,V>::run(){
 
 // Constructor
 template<typename K,typename V> Redis_lite<K,V>::Redis_lite(){
-    run();
+   // run();
 }
 
 // To_lower()
@@ -83,8 +83,12 @@ template<typename K,typename V> string Redis_lite<K,V>::To_lower(string s){
 
 // get()
 template<typename K,typename V> bool Redis_lite<K,V>::get(const K& key){
-    cout<<database.get(key);
-    return true;
+    if(database.exists(key)){
+        
+        cout<<database.get(key);
+        return true;
+    }
+    else return false;
 }
 
 // set

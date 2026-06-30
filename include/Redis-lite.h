@@ -4,7 +4,7 @@
 
 template<typename K,typename V>
 class Redis_lite{
-    private:
+    public:
     void run();
     HashMap<K,V>database;
     bool set(const K& key, const V& value);
@@ -14,7 +14,7 @@ class Redis_lite{
     bool clear();
     size_t size() const;
     std::string To_lower(std::string s);
-    public:
+    
     Redis_lite();
 
 

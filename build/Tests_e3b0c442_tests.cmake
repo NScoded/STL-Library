@@ -1,3 +1,165 @@
+add_test([=[RedisLiteToLowerTest.ConvertUpperCase]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteToLowerTest.ConvertUpperCase]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteToLowerTest.ConvertUpperCase]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\ToLowerTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteToLowerTest.MixedCase]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteToLowerTest.MixedCase]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteToLowerTest.MixedCase]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\ToLowerTests.cpp:11]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteToLowerTest.AlreadyLowerCase]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteToLowerTest.AlreadyLowerCase]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteToLowerTest.AlreadyLowerCase]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\ToLowerTests.cpp:18]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteSizeTest.EmptyDatabase]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteSizeTest.EmptyDatabase]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteSizeTest.EmptyDatabase]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\SizeTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteSizeTest.AfterInsertion]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteSizeTest.AfterInsertion]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteSizeTest.AfterInsertion]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\SizeTests.cpp:11]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteSizeTest.AfterDeletion]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteSizeTest.AfterDeletion]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteSizeTest.AfterDeletion]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\SizeTests.cpp:21]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteGetTest.ExistingKey]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteGetTest.ExistingKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteGetTest.ExistingKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\GetTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteGetTest.NonExistingKey]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteGetTest.NonExistingKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteGetTest.NonExistingKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\GetTests.cpp:13]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteExistsTest.NonExistingKey]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteExistsTest.NonExistingKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteExistsTest.NonExistingKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\ExistsTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteExistsTest.ExistingKey]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteExistsTest.ExistingKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteExistsTest.ExistingKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\ExistsTests.cpp:13]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteDeleteTest.DeleteExistingKey]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteDeleteTest.DeleteExistingKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteDeleteTest.DeleteExistingKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\DeleteTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteDeleteTest.DeleteNonExistingKey]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteDeleteTest.DeleteNonExistingKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteDeleteTest.DeleteNonExistingKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\DeleteTests.cpp:15]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteClearTest.ClearDatabase]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteClearTest.ClearDatabase]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteClearTest.ClearDatabase]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\ClearTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteClearTest.ClearEmptyDatabase]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteClearTest.ClearEmptyDatabase]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteClearTest.ClearEmptyDatabase]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\ClearTests.cpp:16]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteSetTest.SetSingleKey]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteSetTest.SetSingleKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteSetTest.SetSingleKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\SetTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteSetTest.SetMultipleKeys]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteSetTest.SetMultipleKeys]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteSetTest.SetMultipleKeys]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\SetTests.cpp:14]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteSetTest.UpdateExistingKey]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteSetTest.UpdateExistingKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteSetTest.UpdateExistingKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\SetTests.cpp:25]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[RedisLiteConstructorTest.DefaultConstructor]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteConstructorTest.DefaultConstructor]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteConstructorTest.DefaultConstructor]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\ConstructorTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
 add_test([=[HashMapGetTest.GetSingleElement]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapGetTest.GetSingleElement]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[HashMapGetTest.GetSingleElement]=]
   PROPERTIES
@@ -1339,4 +1501,4 @@ set_tests_properties([=[DynamicArrayRemoveStandalone.RemoveLargeDataset]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
-set(Tests_TESTS [==[HashMapGetTest.GetSingleElement]==] [==[HashMapGetTest.GetMultipleElements]==] [==[HashMapGetTest.GetUpdatedValue]==] [==[HashMapGetTest.GetNegativeKey]==] [==[HashMapGetTest.GetZeroKey]==] [==[HashMapGetTest.GetStringKey]==] [==[HashMapGetTest.GetNonExistingKeyThrows]==] [==[HashMapGetTest.GetAfterRemoveThrows]==] [==[HashMapSizeTest.EmptyMapSizeIsZero]==] [==[HashMapSizeTest.SizeAfterSingleInsert]==] [==[HashMapSizeTest.SizeAfterMultipleInserts]==] [==[HashMapSizeTest.DuplicateKeyDoesNotIncreaseSize]==] [==[HashMapSizeTest.SizeAfterRemove]==] [==[HashMapSizeTest.SizeAfterClear]==] [==[HashMapCapacityTest.DefaultCapacity]==] [==[HashMapCapacityTest.CustomCapacity]==] [==[HashMapCapacityTest.CapacityAfterInsertWithoutRehash]==] [==[HashMapCapacityTest.CapacityAfterRehash]==] [==[HashMapRehashTest.CapacityDoublesAfterThreshold]==] [==[HashMapRehashTest.AllElementsRemainAfterRehash]==] [==[HashMapRehashTest.LoadFactorAfterRehash]==] [==[HashMapRehashTest.DuplicateKeyDoesNotTriggerExtraRehash]==] [==[HashMapRehashTest.MultipleRehashes]==] [==[HashMapClearTest.ClearEmptyMap]==] [==[HashMapClearTest.ClearAfterSingleInsert]==] [==[HashMapClearTest.ClearAfterMultipleInserts]==] [==[HashMapClearTest.InsertAfterClear]==] [==[HashMapClearTest.CapacityRemainsSameAfterClear]==] [==[HashMapLoadFactorTest.EmptyMap]==] [==[HashMapLoadFactorTest.OneElement]==] [==[HashMapLoadFactorTest.MultipleElements]==] [==[HashMapLoadFactorTest.DuplicateKeyDoesNotChangeLoadFactor]==] [==[HashMapLoadFactorTest.LoadFactorAfterRemove]==] [==[HashMapLoadFactorTest.LoadFactorAfterClear]==] [==[HashMapExistsTest.ExistingKeyReturnsTrue]==] [==[HashMapExistsTest.NonExistingKeyReturnsFalse]==] [==[HashMapExistsTest.EmptyMapReturnsFalse]==] [==[HashMapExistsTest.NegativeKey]==] [==[HashMapExistsTest.ZeroKey]==] [==[HashMapExistsTest.AfterRemoveReturnsFalse]==] [==[HashMapExistsTest.MultipleElements]==] [==[HashMapExistsTest.StringKeys]==] [==[HashMapExistsTest.DuplicateInsertStillExists]==] [==[HashMapRemoveTest.RemoveExistingKey]==] [==[HashMapRemoveTest.RemoveFromMultipleElements]==] [==[HashMapRemoveTest.RemoveFirstInsertedElement]==] [==[HashMapRemoveTest.RemoveLastInsertedElement]==] [==[HashMapRemoveTest.RemoveMiddleElement]==] [==[HashMapRemoveTest.RemoveNegativeKey]==] [==[HashMapRemoveTest.RemoveZeroKey]==] [==[HashMapRemoveTest.RemoveNonExistingKey]==] [==[HashMapRemoveTest.RemoveFromEmptyMap]==] [==[HashMapRemoveTest.RemoveAllElements]==] [==[HashMapInsertTest.InsertSingleElement]==] [==[HashMapInsertTest.InsertMultipleElements]==] [==[HashMapInsertTest.InsertDuplicateKeyUpdatesValue]==] [==[HashMapInsertTest.InsertNegativeKey]==] [==[HashMapInsertTest.InsertZeroKey]==] [==[HashMapInsertTest.InsertManyElements]==] [==[HashMapInsertTest.InsertStringKeys]==] [==[HashMapInsertTest.InsertAfterDuplicateUpdatesOnlyValue]==] [==[HashMapInsertTest.InsertMaintainsOtherElements]==] [==[HashMapConstructorTest.DefaultConstructorInitializesEmptyMap]==] [==[HashMapConstructorTest.ConstructorCreatesIndependentObjects]==] [==[HashMapConstructorTest.EmptyMapDoesNotContainAnyKey]==] [==[HashMapConstructorTest.EmptyMapThrowsOnGet]==] [==[HashMapConstructorTest.ConstructorWorksForDifferentKeyValueTypes]==] [==[LinkedListExistsTest.ExistingElement]==] [==[LinkedListExistsTest.NonExistingElement]==] [==[LinkedListExistsTest.EmptyList]==] [==[LinkedListExistsTest.FirstElementExists]==] [==[LinkedListExistsTest.LastElementExists]==] [==[LinkedListLengthTest.InitiallyZero]==] [==[LinkedListLengthTest.AfterInsertions]==] [==[LinkedListLengthTest.AfterRemoval]==] [==[LinkedListLengthTest.AfterClear]==] [==[LinkedListReverseTest.ReverseEmptyList]==] [==[LinkedListReverseTest.ReverseSingleElement]==] [==[LinkedListReverseTest.ReverseMultipleElements]==] [==[LinkedListReverseTest.ReverseTwiceReturnsOriginal]==] [==[LinkedListPopTest.PopLastElement]==] [==[LinkedListPopTest.PopUntilEmpty]==] [==[LinkedListPopTest.PopSingleElement]==] [==[LinkedListPopTest.PopFromEmptyList]==] [==[LinkedListAppendTest.AppendSingleElement]==] [==[LinkedListAppendTest.AppendMultipleElements]==] [==[LinkedListAppendTest.TailUpdatesCorrectly]==] [==[LinkedListAppendTest.AppendAfterClear]==] [==[LinkedListAppendTest.AppendLargeDataset]==] [==[LinkedListInsertTest.InsertAtBeginning]==] [==[LinkedListInsertTest.InsertAtMiddle]==] [==[LinkedListInsertTest.InsertAtEnd]==] [==[LinkedListInsertTest.InsertIntoEmptyList]==] [==[LinkedListInsertTest.InvalidNegativeIndex]==] [==[LinkedListInsertTest.InvalidLargeIndex]==] [==[LinkedListRemoveTest.RemoveHead]==] [==[LinkedListRemoveTest.RemoveMiddle]==] [==[LinkedListRemoveTest.RemoveTail]==] [==[LinkedListRemoveTest.RemoveOnlyElement]==] [==[LinkedListRemoveTest.RemoveNonExistingElement]==] [==[LinkedListRemoveTest.RemoveFromEmptyList]==] [==[LinkedListRemoveTest.RemoveFirstOccurrenceOnly]==] [==[LinkedListEqualityOperatorTest.EqualLists]==] [==[LinkedListEqualityOperatorTest.DifferentSizes]==] [==[LinkedListEqualityOperatorTest.DifferentValues]==] [==[LinkedListEqualityOperatorTest.EmptyLists]==] [==[LinkedListEqualityOperatorTest.OneEmptyOneNonEmpty]==] [==[LinkedListAssignmentOperatorTest.AssignPopulatedList]==] [==[LinkedListAssignmentOperatorTest.AssignEmptyList]==] [==[LinkedListAssignmentOperatorTest.SelfAssignment]==] [==[LinkedListAssignmentOperatorTest.DeepCopyVerification]==] [==[LinkedListAssignmentOperatorTest.OverwriteExistingList]==] [==[LinkedListInsertHeadTest.InsertSingleElement]==] [==[LinkedListInsertHeadTest.InsertMultipleElements]==] [==[LinkedListInsertHeadTest.TailRemainsFirstInsertedElement]==] [==[LinkedListInsertHeadTest.HeadChangesAfterEveryInsertion]==] [==[LinkedListInsertHeadTest.InsertAfterClear]==] [==[DynamicArrayClearTest.ClearArray]==] [==[DynamicArrayClearTest.ClearEmptyArray]==] [==[DynamicArrayClearTest.ReuseAfterClear]==] [==[DynamicArrayCapacityTest.DefaultCapacity]==] [==[DynamicArrayCapacityTest.CapacityGrows]==] [==[DynamicArrayCapacityTest.CapacityAfterClear]==] [==[DynamicArraySizeTest.InitiallyZero]==] [==[DynamicArraySizeTest.SizeAfterInsertions]==] [==[DynamicArraySizeTest.SizeAfterRemoval]==] [==[DynamicArrayPopBackTest.RemoveLastElement]==] [==[DynamicArrayPopBackTest.RemoveAllElements]==] [==[DynamicArrayPopBackStandalone.PopFromEmptyThrows]==] [==[DynamicArrayPushBackTest.PushSingleElement]==] [==[DynamicArrayPushBackTest.PushMultipleElements]==] [==[DynamicArrayPushBackTest.PushTriggersResize]==] [==[DynamicArrayPushBackTest.PushLargeDataset]==] [==[DynamicArrayInsertTest.InsertAtBeginning]==] [==[DynamicArrayInsertTest.InsertAtMiddle]==] [==[DynamicArrayInsertTest.InsertAtEnd]==] [==[DynamicArrayInsertStandalone.InsertIntoEmptyArray]==] [==[DynamicArrayInsertStandalone.InsertTriggersResize]==] [==[DynamicArrayInsertStandalone.InsertNegativeIndexThrows]==] [==[DynamicArrayInsertStandalone.InsertPastEndThrows]==] [==[DynamicArrayInsertStandalone.InsertLargeDataset]==] [==[DynamicArrayRemoveTest.RemoveFromBeginning]==] [==[DynamicArrayRemoveTest.RemoveFromMiddle]==] [==[DynamicArrayRemoveTest.RemoveFromEnd]==] [==[DynamicArrayRemoveStandalone.RemoveOnlyElement]==] [==[DynamicArrayRemoveStandalone.RemoveFromEmptyThrows]==] [==[DynamicArrayRemoveStandalone.RemoveNegativeIndexThrows]==] [==[DynamicArrayRemoveStandalone.RemovePastEndThrows]==] [==[DynamicArrayRemoveStandalone.RemoveLargeDataset]==])
+set(Tests_TESTS [==[RedisLiteToLowerTest.ConvertUpperCase]==] [==[RedisLiteToLowerTest.MixedCase]==] [==[RedisLiteToLowerTest.AlreadyLowerCase]==] [==[RedisLiteSizeTest.EmptyDatabase]==] [==[RedisLiteSizeTest.AfterInsertion]==] [==[RedisLiteSizeTest.AfterDeletion]==] [==[RedisLiteGetTest.ExistingKey]==] [==[RedisLiteGetTest.NonExistingKey]==] [==[RedisLiteExistsTest.NonExistingKey]==] [==[RedisLiteExistsTest.ExistingKey]==] [==[RedisLiteDeleteTest.DeleteExistingKey]==] [==[RedisLiteDeleteTest.DeleteNonExistingKey]==] [==[RedisLiteClearTest.ClearDatabase]==] [==[RedisLiteClearTest.ClearEmptyDatabase]==] [==[RedisLiteSetTest.SetSingleKey]==] [==[RedisLiteSetTest.SetMultipleKeys]==] [==[RedisLiteSetTest.UpdateExistingKey]==] [==[RedisLiteConstructorTest.DefaultConstructor]==] [==[HashMapGetTest.GetSingleElement]==] [==[HashMapGetTest.GetMultipleElements]==] [==[HashMapGetTest.GetUpdatedValue]==] [==[HashMapGetTest.GetNegativeKey]==] [==[HashMapGetTest.GetZeroKey]==] [==[HashMapGetTest.GetStringKey]==] [==[HashMapGetTest.GetNonExistingKeyThrows]==] [==[HashMapGetTest.GetAfterRemoveThrows]==] [==[HashMapSizeTest.EmptyMapSizeIsZero]==] [==[HashMapSizeTest.SizeAfterSingleInsert]==] [==[HashMapSizeTest.SizeAfterMultipleInserts]==] [==[HashMapSizeTest.DuplicateKeyDoesNotIncreaseSize]==] [==[HashMapSizeTest.SizeAfterRemove]==] [==[HashMapSizeTest.SizeAfterClear]==] [==[HashMapCapacityTest.DefaultCapacity]==] [==[HashMapCapacityTest.CustomCapacity]==] [==[HashMapCapacityTest.CapacityAfterInsertWithoutRehash]==] [==[HashMapCapacityTest.CapacityAfterRehash]==] [==[HashMapRehashTest.CapacityDoublesAfterThreshold]==] [==[HashMapRehashTest.AllElementsRemainAfterRehash]==] [==[HashMapRehashTest.LoadFactorAfterRehash]==] [==[HashMapRehashTest.DuplicateKeyDoesNotTriggerExtraRehash]==] [==[HashMapRehashTest.MultipleRehashes]==] [==[HashMapClearTest.ClearEmptyMap]==] [==[HashMapClearTest.ClearAfterSingleInsert]==] [==[HashMapClearTest.ClearAfterMultipleInserts]==] [==[HashMapClearTest.InsertAfterClear]==] [==[HashMapClearTest.CapacityRemainsSameAfterClear]==] [==[HashMapLoadFactorTest.EmptyMap]==] [==[HashMapLoadFactorTest.OneElement]==] [==[HashMapLoadFactorTest.MultipleElements]==] [==[HashMapLoadFactorTest.DuplicateKeyDoesNotChangeLoadFactor]==] [==[HashMapLoadFactorTest.LoadFactorAfterRemove]==] [==[HashMapLoadFactorTest.LoadFactorAfterClear]==] [==[HashMapExistsTest.ExistingKeyReturnsTrue]==] [==[HashMapExistsTest.NonExistingKeyReturnsFalse]==] [==[HashMapExistsTest.EmptyMapReturnsFalse]==] [==[HashMapExistsTest.NegativeKey]==] [==[HashMapExistsTest.ZeroKey]==] [==[HashMapExistsTest.AfterRemoveReturnsFalse]==] [==[HashMapExistsTest.MultipleElements]==] [==[HashMapExistsTest.StringKeys]==] [==[HashMapExistsTest.DuplicateInsertStillExists]==] [==[HashMapRemoveTest.RemoveExistingKey]==] [==[HashMapRemoveTest.RemoveFromMultipleElements]==] [==[HashMapRemoveTest.RemoveFirstInsertedElement]==] [==[HashMapRemoveTest.RemoveLastInsertedElement]==] [==[HashMapRemoveTest.RemoveMiddleElement]==] [==[HashMapRemoveTest.RemoveNegativeKey]==] [==[HashMapRemoveTest.RemoveZeroKey]==] [==[HashMapRemoveTest.RemoveNonExistingKey]==] [==[HashMapRemoveTest.RemoveFromEmptyMap]==] [==[HashMapRemoveTest.RemoveAllElements]==] [==[HashMapInsertTest.InsertSingleElement]==] [==[HashMapInsertTest.InsertMultipleElements]==] [==[HashMapInsertTest.InsertDuplicateKeyUpdatesValue]==] [==[HashMapInsertTest.InsertNegativeKey]==] [==[HashMapInsertTest.InsertZeroKey]==] [==[HashMapInsertTest.InsertManyElements]==] [==[HashMapInsertTest.InsertStringKeys]==] [==[HashMapInsertTest.InsertAfterDuplicateUpdatesOnlyValue]==] [==[HashMapInsertTest.InsertMaintainsOtherElements]==] [==[HashMapConstructorTest.DefaultConstructorInitializesEmptyMap]==] [==[HashMapConstructorTest.ConstructorCreatesIndependentObjects]==] [==[HashMapConstructorTest.EmptyMapDoesNotContainAnyKey]==] [==[HashMapConstructorTest.EmptyMapThrowsOnGet]==] [==[HashMapConstructorTest.ConstructorWorksForDifferentKeyValueTypes]==] [==[LinkedListExistsTest.ExistingElement]==] [==[LinkedListExistsTest.NonExistingElement]==] [==[LinkedListExistsTest.EmptyList]==] [==[LinkedListExistsTest.FirstElementExists]==] [==[LinkedListExistsTest.LastElementExists]==] [==[LinkedListLengthTest.InitiallyZero]==] [==[LinkedListLengthTest.AfterInsertions]==] [==[LinkedListLengthTest.AfterRemoval]==] [==[LinkedListLengthTest.AfterClear]==] [==[LinkedListReverseTest.ReverseEmptyList]==] [==[LinkedListReverseTest.ReverseSingleElement]==] [==[LinkedListReverseTest.ReverseMultipleElements]==] [==[LinkedListReverseTest.ReverseTwiceReturnsOriginal]==] [==[LinkedListPopTest.PopLastElement]==] [==[LinkedListPopTest.PopUntilEmpty]==] [==[LinkedListPopTest.PopSingleElement]==] [==[LinkedListPopTest.PopFromEmptyList]==] [==[LinkedListAppendTest.AppendSingleElement]==] [==[LinkedListAppendTest.AppendMultipleElements]==] [==[LinkedListAppendTest.TailUpdatesCorrectly]==] [==[LinkedListAppendTest.AppendAfterClear]==] [==[LinkedListAppendTest.AppendLargeDataset]==] [==[LinkedListInsertTest.InsertAtBeginning]==] [==[LinkedListInsertTest.InsertAtMiddle]==] [==[LinkedListInsertTest.InsertAtEnd]==] [==[LinkedListInsertTest.InsertIntoEmptyList]==] [==[LinkedListInsertTest.InvalidNegativeIndex]==] [==[LinkedListInsertTest.InvalidLargeIndex]==] [==[LinkedListRemoveTest.RemoveHead]==] [==[LinkedListRemoveTest.RemoveMiddle]==] [==[LinkedListRemoveTest.RemoveTail]==] [==[LinkedListRemoveTest.RemoveOnlyElement]==] [==[LinkedListRemoveTest.RemoveNonExistingElement]==] [==[LinkedListRemoveTest.RemoveFromEmptyList]==] [==[LinkedListRemoveTest.RemoveFirstOccurrenceOnly]==] [==[LinkedListEqualityOperatorTest.EqualLists]==] [==[LinkedListEqualityOperatorTest.DifferentSizes]==] [==[LinkedListEqualityOperatorTest.DifferentValues]==] [==[LinkedListEqualityOperatorTest.EmptyLists]==] [==[LinkedListEqualityOperatorTest.OneEmptyOneNonEmpty]==] [==[LinkedListAssignmentOperatorTest.AssignPopulatedList]==] [==[LinkedListAssignmentOperatorTest.AssignEmptyList]==] [==[LinkedListAssignmentOperatorTest.SelfAssignment]==] [==[LinkedListAssignmentOperatorTest.DeepCopyVerification]==] [==[LinkedListAssignmentOperatorTest.OverwriteExistingList]==] [==[LinkedListInsertHeadTest.InsertSingleElement]==] [==[LinkedListInsertHeadTest.InsertMultipleElements]==] [==[LinkedListInsertHeadTest.TailRemainsFirstInsertedElement]==] [==[LinkedListInsertHeadTest.HeadChangesAfterEveryInsertion]==] [==[LinkedListInsertHeadTest.InsertAfterClear]==] [==[DynamicArrayClearTest.ClearArray]==] [==[DynamicArrayClearTest.ClearEmptyArray]==] [==[DynamicArrayClearTest.ReuseAfterClear]==] [==[DynamicArrayCapacityTest.DefaultCapacity]==] [==[DynamicArrayCapacityTest.CapacityGrows]==] [==[DynamicArrayCapacityTest.CapacityAfterClear]==] [==[DynamicArraySizeTest.InitiallyZero]==] [==[DynamicArraySizeTest.SizeAfterInsertions]==] [==[DynamicArraySizeTest.SizeAfterRemoval]==] [==[DynamicArrayPopBackTest.RemoveLastElement]==] [==[DynamicArrayPopBackTest.RemoveAllElements]==] [==[DynamicArrayPopBackStandalone.PopFromEmptyThrows]==] [==[DynamicArrayPushBackTest.PushSingleElement]==] [==[DynamicArrayPushBackTest.PushMultipleElements]==] [==[DynamicArrayPushBackTest.PushTriggersResize]==] [==[DynamicArrayPushBackTest.PushLargeDataset]==] [==[DynamicArrayInsertTest.InsertAtBeginning]==] [==[DynamicArrayInsertTest.InsertAtMiddle]==] [==[DynamicArrayInsertTest.InsertAtEnd]==] [==[DynamicArrayInsertStandalone.InsertIntoEmptyArray]==] [==[DynamicArrayInsertStandalone.InsertTriggersResize]==] [==[DynamicArrayInsertStandalone.InsertNegativeIndexThrows]==] [==[DynamicArrayInsertStandalone.InsertPastEndThrows]==] [==[DynamicArrayInsertStandalone.InsertLargeDataset]==] [==[DynamicArrayRemoveTest.RemoveFromBeginning]==] [==[DynamicArrayRemoveTest.RemoveFromMiddle]==] [==[DynamicArrayRemoveTest.RemoveFromEnd]==] [==[DynamicArrayRemoveStandalone.RemoveOnlyElement]==] [==[DynamicArrayRemoveStandalone.RemoveFromEmptyThrows]==] [==[DynamicArrayRemoveStandalone.RemoveNegativeIndexThrows]==] [==[DynamicArrayRemoveStandalone.RemovePastEndThrows]==] [==[DynamicArrayRemoveStandalone.RemoveLargeDataset]==])

@@ -62,6 +62,18 @@ add_executable(Tests
     tests/HashMap/SizeTests.cpp
     tests/HashMap/GetTests.cpp
     
+
+    tests/Redis-lite/ConstructorTests.cpp
+    tests/Redis-lite/SetTests.cpp
+    tests/Redis-lite/ClearTests.cpp
+    tests/Redis-lite/DeleteTests.cpp
+    tests/Redis-lite/ExistsTests.cpp
+    tests/Redis-lite/GetTests.cpp
+    tests/Redis-lite/SizeTests.cpp
+    tests/Redis-lite/ToLowerTests.cpp
+    
+
+
 )
 
 target_include_directories(Tests PRIVATE

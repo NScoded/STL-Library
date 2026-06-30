@@ -35,6 +35,14 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Git pull/STL-Library/tests/LinkedList/PopTests.cpp" "CMakeFiles/Tests.dir/tests/LinkedList/PopTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/LinkedList/PopTests.cpp.obj.d"
   "D:/Git pull/STL-Library/tests/LinkedList/RemoveTests.cpp" "CMakeFiles/Tests.dir/tests/LinkedList/RemoveTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/LinkedList/RemoveTests.cpp.obj.d"
   "D:/Git pull/STL-Library/tests/LinkedList/ReverseTests.cpp" "CMakeFiles/Tests.dir/tests/LinkedList/ReverseTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/LinkedList/ReverseTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/Redis-lite/ClearTests.cpp" "CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/Redis-lite/ConstructorTests.cpp" "CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/Redis-lite/DeleteTests.cpp" "CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/Redis-lite/ExistsTests.cpp" "CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/Redis-lite/GetTests.cpp" "CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/Redis-lite/SetTests.cpp" "CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/Redis-lite/SizeTests.cpp" "CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/Redis-lite/ToLowerTests.cpp" "CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.obj.d"
   "D:/Git pull/STL-Library/tests/main.cpp" "CMakeFiles/Tests.dir/tests/main.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/main.cpp.obj.d"
   )
 

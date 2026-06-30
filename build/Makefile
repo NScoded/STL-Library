@@ -920,6 +920,198 @@ tests/LinkedList/ReverseTests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/LinkedList/ReverseTests.cpp.s
 .PHONY : tests/LinkedList/ReverseTests.cpp.s
 
+tests/Redis-lite/ClearTests.obj: tests/Redis-lite/ClearTests.cpp.obj
+.PHONY : tests/Redis-lite/ClearTests.obj
+
+# target to build an object file
+tests/Redis-lite/ClearTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj
+.PHONY : tests/Redis-lite/ClearTests.cpp.obj
+
+tests/Redis-lite/ClearTests.i: tests/Redis-lite/ClearTests.cpp.i
+.PHONY : tests/Redis-lite/ClearTests.i
+
+# target to preprocess a source file
+tests/Redis-lite/ClearTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.i
+.PHONY : tests/Redis-lite/ClearTests.cpp.i
+
+tests/Redis-lite/ClearTests.s: tests/Redis-lite/ClearTests.cpp.s
+.PHONY : tests/Redis-lite/ClearTests.s
+
+# target to generate assembly for a file
+tests/Redis-lite/ClearTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.s
+.PHONY : tests/Redis-lite/ClearTests.cpp.s
+
+tests/Redis-lite/ConstructorTests.obj: tests/Redis-lite/ConstructorTests.cpp.obj
+.PHONY : tests/Redis-lite/ConstructorTests.obj
+
+# target to build an object file
+tests/Redis-lite/ConstructorTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj
+.PHONY : tests/Redis-lite/ConstructorTests.cpp.obj
+
+tests/Redis-lite/ConstructorTests.i: tests/Redis-lite/ConstructorTests.cpp.i
+.PHONY : tests/Redis-lite/ConstructorTests.i
+
+# target to preprocess a source file
+tests/Redis-lite/ConstructorTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.i
+.PHONY : tests/Redis-lite/ConstructorTests.cpp.i
+
+tests/Redis-lite/ConstructorTests.s: tests/Redis-lite/ConstructorTests.cpp.s
+.PHONY : tests/Redis-lite/ConstructorTests.s
+
+# target to generate assembly for a file
+tests/Redis-lite/ConstructorTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.s
+.PHONY : tests/Redis-lite/ConstructorTests.cpp.s
+
+tests/Redis-lite/DeleteTests.obj: tests/Redis-lite/DeleteTests.cpp.obj
+.PHONY : tests/Redis-lite/DeleteTests.obj
+
+# target to build an object file
+tests/Redis-lite/DeleteTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.obj
+.PHONY : tests/Redis-lite/DeleteTests.cpp.obj
+
+tests/Redis-lite/DeleteTests.i: tests/Redis-lite/DeleteTests.cpp.i
+.PHONY : tests/Redis-lite/DeleteTests.i
+
+# target to preprocess a source file
+tests/Redis-lite/DeleteTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.i
+.PHONY : tests/Redis-lite/DeleteTests.cpp.i
+
+tests/Redis-lite/DeleteTests.s: tests/Redis-lite/DeleteTests.cpp.s
+.PHONY : tests/Redis-lite/DeleteTests.s
+
+# target to generate assembly for a file
+tests/Redis-lite/DeleteTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.s
+.PHONY : tests/Redis-lite/DeleteTests.cpp.s
+
+tests/Redis-lite/ExistsTests.obj: tests/Redis-lite/ExistsTests.cpp.obj
+.PHONY : tests/Redis-lite/ExistsTests.obj
+
+# target to build an object file
+tests/Redis-lite/ExistsTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.obj
+.PHONY : tests/Redis-lite/ExistsTests.cpp.obj
+
+tests/Redis-lite/ExistsTests.i: tests/Redis-lite/ExistsTests.cpp.i
+.PHONY : tests/Redis-lite/ExistsTests.i
+
+# target to preprocess a source file
+tests/Redis-lite/ExistsTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.i
+.PHONY : tests/Redis-lite/ExistsTests.cpp.i
+
+tests/Redis-lite/ExistsTests.s: tests/Redis-lite/ExistsTests.cpp.s
+.PHONY : tests/Redis-lite/ExistsTests.s
+
+# target to generate assembly for a file
+tests/Redis-lite/ExistsTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.s
+.PHONY : tests/Redis-lite/ExistsTests.cpp.s
+
+tests/Redis-lite/GetTests.obj: tests/Redis-lite/GetTests.cpp.obj
+.PHONY : tests/Redis-lite/GetTests.obj
+
+# target to build an object file
+tests/Redis-lite/GetTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.obj
+.PHONY : tests/Redis-lite/GetTests.cpp.obj
+
+tests/Redis-lite/GetTests.i: tests/Redis-lite/GetTests.cpp.i
+.PHONY : tests/Redis-lite/GetTests.i
+
+# target to preprocess a source file
+tests/Redis-lite/GetTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.i
+.PHONY : tests/Redis-lite/GetTests.cpp.i
+
+tests/Redis-lite/GetTests.s: tests/Redis-lite/GetTests.cpp.s
+.PHONY : tests/Redis-lite/GetTests.s
+
+# target to generate assembly for a file
+tests/Redis-lite/GetTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.s
+.PHONY : tests/Redis-lite/GetTests.cpp.s
+
+tests/Redis-lite/SetTests.obj: tests/Redis-lite/SetTests.cpp.obj
+.PHONY : tests/Redis-lite/SetTests.obj
+
+# target to build an object file
+tests/Redis-lite/SetTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj
+.PHONY : tests/Redis-lite/SetTests.cpp.obj
+
+tests/Redis-lite/SetTests.i: tests/Redis-lite/SetTests.cpp.i
+.PHONY : tests/Redis-lite/SetTests.i
+
+# target to preprocess a source file
+tests/Redis-lite/SetTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.i
+.PHONY : tests/Redis-lite/SetTests.cpp.i
+
+tests/Redis-lite/SetTests.s: tests/Redis-lite/SetTests.cpp.s
+.PHONY : tests/Redis-lite/SetTests.s
+
+# target to generate assembly for a file
+tests/Redis-lite/SetTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.s
+.PHONY : tests/Redis-lite/SetTests.cpp.s
+
+tests/Redis-lite/SizeTests.obj: tests/Redis-lite/SizeTests.cpp.obj
+.PHONY : tests/Redis-lite/SizeTests.obj
+
+# target to build an object file
+tests/Redis-lite/SizeTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.obj
+.PHONY : tests/Redis-lite/SizeTests.cpp.obj
+
+tests/Redis-lite/SizeTests.i: tests/Redis-lite/SizeTests.cpp.i
+.PHONY : tests/Redis-lite/SizeTests.i
+
+# target to preprocess a source file
+tests/Redis-lite/SizeTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.i
+.PHONY : tests/Redis-lite/SizeTests.cpp.i
+
+tests/Redis-lite/SizeTests.s: tests/Redis-lite/SizeTests.cpp.s
+.PHONY : tests/Redis-lite/SizeTests.s
+
+# target to generate assembly for a file
+tests/Redis-lite/SizeTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.s
+.PHONY : tests/Redis-lite/SizeTests.cpp.s
+
+tests/Redis-lite/ToLowerTests.obj: tests/Redis-lite/ToLowerTests.cpp.obj
+.PHONY : tests/Redis-lite/ToLowerTests.obj
+
+# target to build an object file
+tests/Redis-lite/ToLowerTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.obj
+.PHONY : tests/Redis-lite/ToLowerTests.cpp.obj
+
+tests/Redis-lite/ToLowerTests.i: tests/Redis-lite/ToLowerTests.cpp.i
+.PHONY : tests/Redis-lite/ToLowerTests.i
+
+# target to preprocess a source file
+tests/Redis-lite/ToLowerTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.i
+.PHONY : tests/Redis-lite/ToLowerTests.cpp.i
+
+tests/Redis-lite/ToLowerTests.s: tests/Redis-lite/ToLowerTests.cpp.s
+.PHONY : tests/Redis-lite/ToLowerTests.s
+
+# target to generate assembly for a file
+tests/Redis-lite/ToLowerTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.s
+.PHONY : tests/Redis-lite/ToLowerTests.cpp.s
+
 tests/main.obj: tests/main.cpp.obj
 .PHONY : tests/main.obj
 
@@ -1047,6 +1239,30 @@ help:
 	@echo ... tests/LinkedList/ReverseTests.obj
 	@echo ... tests/LinkedList/ReverseTests.i
 	@echo ... tests/LinkedList/ReverseTests.s
+	@echo ... tests/Redis-lite/ClearTests.obj
+	@echo ... tests/Redis-lite/ClearTests.i
+	@echo ... tests/Redis-lite/ClearTests.s
+	@echo ... tests/Redis-lite/ConstructorTests.obj
+	@echo ... tests/Redis-lite/ConstructorTests.i
+	@echo ... tests/Redis-lite/ConstructorTests.s
+	@echo ... tests/Redis-lite/DeleteTests.obj
+	@echo ... tests/Redis-lite/DeleteTests.i
+	@echo ... tests/Redis-lite/DeleteTests.s
+	@echo ... tests/Redis-lite/ExistsTests.obj
+	@echo ... tests/Redis-lite/ExistsTests.i
+	@echo ... tests/Redis-lite/ExistsTests.s
+	@echo ... tests/Redis-lite/GetTests.obj
+	@echo ... tests/Redis-lite/GetTests.i
+	@echo ... tests/Redis-lite/GetTests.s
+	@echo ... tests/Redis-lite/SetTests.obj
+	@echo ... tests/Redis-lite/SetTests.i
+	@echo ... tests/Redis-lite/SetTests.s
+	@echo ... tests/Redis-lite/SizeTests.obj
+	@echo ... tests/Redis-lite/SizeTests.i
+	@echo ... tests/Redis-lite/SizeTests.s
+	@echo ... tests/Redis-lite/ToLowerTests.obj
+	@echo ... tests/Redis-lite/ToLowerTests.i
+	@echo ... tests/Redis-lite/ToLowerTests.s
 	@echo ... tests/main.obj
 	@echo ... tests/main.i
 	@echo ... tests/main.s
