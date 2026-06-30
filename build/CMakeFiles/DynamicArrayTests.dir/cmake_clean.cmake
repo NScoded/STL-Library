@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DynamicArrayTests.dir/tests/DynamicArray/RemoveTests.cpp.obj.d"
   "CMakeFiles/DynamicArrayTests.dir/tests/DynamicArray/SizeTests.cpp.obj"
   "CMakeFiles/DynamicArrayTests.dir/tests/DynamicArray/SizeTests.cpp.obj.d"
+  "CMakeFiles/DynamicArrayTests.dir/tests/HashMap/ConstructorTests.cpp.obj"
+  "CMakeFiles/DynamicArrayTests.dir/tests/HashMap/ConstructorTests.cpp.obj.d"
   "CMakeFiles/DynamicArrayTests.dir/tests/LinkedList/AppendTests.cpp.obj"
   "CMakeFiles/DynamicArrayTests.dir/tests/LinkedList/AppendTests.cpp.obj.d"
   "CMakeFiles/DynamicArrayTests.dir/tests/LinkedList/AssignmentOperatorTests.cpp.obj"

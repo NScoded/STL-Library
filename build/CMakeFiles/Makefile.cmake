@@ -69,8 +69,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "DynamicArrayTests_e3b0c442_discovery.cmake"
-  "DynamicArrayTests_e3b0c442_include.cmake"
+  "Tests_e3b0c442_discovery.cmake"
+  "Tests_e3b0c442_include.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "googletest-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   "googletest-build/googletest/generated/gmock.pc"
@@ -86,7 +86,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/STL_Library.dir/DependInfo.cmake"
-  "CMakeFiles/DynamicArrayTests.dir/DependInfo.cmake"
+  "CMakeFiles/Tests.dir/DependInfo.cmake"
   "googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"

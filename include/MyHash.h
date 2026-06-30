@@ -5,7 +5,7 @@
 #include <cstddef>
 #include <iostream>
 
-size_t i=0;
+
 template<typename T>
 struct MyHash {
 

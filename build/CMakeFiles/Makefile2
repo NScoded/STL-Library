@@ -63,13 +63,13 @@ CMAKE_BINARY_DIR = "D:\Git pull\STL-Library\build"
 
 # The main recursive "all" target.
 all: CMakeFiles/STL_Library.dir/all
-all: CMakeFiles/DynamicArrayTests.dir/all
+all: CMakeFiles/Tests.dir/all
 all: googletest-build/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/STL_Library.dir/codegen
-codegen: CMakeFiles/DynamicArrayTests.dir/codegen
+codegen: CMakeFiles/Tests.dir/codegen
 codegen: googletest-build/codegen
 .PHONY : codegen
 
@@ -79,7 +79,7 @@ preinstall: googletest-build/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/STL_Library.dir/clean
-clean: CMakeFiles/DynamicArrayTests.dir/clean
+clean: CMakeFiles/Tests.dir/clean
 clean: googletest-build/clean
 .PHONY : clean
 
@@ -156,7 +156,7 @@ googletest-build/googletest/clean: googletest-build/googletest/CMakeFiles/gtest_
 CMakeFiles/STL_Library.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STL_Library.dir\build.make CMakeFiles/STL_Library.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STL_Library.dir\build.make CMakeFiles/STL_Library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=20,21 "Built target STL_Library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=1,2 "Built target STL_Library"
 .PHONY : CMakeFiles/STL_Library.dir/all
 
 # Build rule for subdir invocation for target.
@@ -173,7 +173,7 @@ STL_Library: CMakeFiles/STL_Library.dir/rule
 # codegen rule for target.
 CMakeFiles/STL_Library.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STL_Library.dir\build.make CMakeFiles/STL_Library.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=20,21 "Finished codegen for target STL_Library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=1,2 "Finished codegen for target STL_Library"
 .PHONY : CMakeFiles/STL_Library.dir/codegen
 
 # clean rule for target.
@@ -182,37 +182,37 @@ CMakeFiles/STL_Library.dir/clean:
 .PHONY : CMakeFiles/STL_Library.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/DynamicArrayTests.dir
+# Target rules for target CMakeFiles/Tests.dir
 
 # All Build rule for target.
-CMakeFiles/DynamicArrayTests.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
-CMakeFiles/DynamicArrayTests.dir/all: googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target DynamicArrayTests"
-.PHONY : CMakeFiles/DynamicArrayTests.dir/all
+CMakeFiles/Tests.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/Tests.dir/all: googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target Tests"
+.PHONY : CMakeFiles/Tests.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/DynamicArrayTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Git pull\STL-Library\build\CMakeFiles" 23
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/DynamicArrayTests.dir/all
+CMakeFiles/Tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Git pull\STL-Library\build\CMakeFiles" 33
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Git pull\STL-Library\build\CMakeFiles" 0
-.PHONY : CMakeFiles/DynamicArrayTests.dir/rule
+.PHONY : CMakeFiles/Tests.dir/rule
 
 # Convenience name for target.
-DynamicArrayTests: CMakeFiles/DynamicArrayTests.dir/rule
-.PHONY : DynamicArrayTests
+Tests: CMakeFiles/Tests.dir/rule
+.PHONY : Tests
 
 # codegen rule for target.
-CMakeFiles/DynamicArrayTests.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Finished codegen for target DynamicArrayTests"
-.PHONY : CMakeFiles/DynamicArrayTests.dir/codegen
+CMakeFiles/Tests.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Finished codegen for target Tests"
+.PHONY : CMakeFiles/Tests.dir/codegen
 
 # clean rule for target.
-CMakeFiles/DynamicArrayTests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/clean
-.PHONY : CMakeFiles/DynamicArrayTests.dir/clean
+CMakeFiles/Tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/clean
+.PHONY : CMakeFiles/Tests.dir/clean
 
 #=============================================================================
 # Target rules for target googletest-build/googlemock/CMakeFiles/gmock.dir
@@ -221,7 +221,7 @@ CMakeFiles/DynamicArrayTests.dir/clean:
 googletest-build/googlemock/CMakeFiles/gmock.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest-build\googlemock\CMakeFiles\gmock.dir\build.make googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest-build\googlemock\CMakeFiles\gmock.dir\build.make googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=22,23 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=32,33 "Built target gmock"
 .PHONY : googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -238,7 +238,7 @@ gmock: googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 # codegen rule for target.
 googletest-build/googlemock/CMakeFiles/gmock.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f googletest-build\googlemock\CMakeFiles\gmock.dir\build.make googletest-build/googlemock/CMakeFiles/gmock.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=22,23 "Finished codegen for target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=32,33 "Finished codegen for target gmock"
 .PHONY : googletest-build/googlemock/CMakeFiles/gmock.dir/codegen
 
 # clean rule for target.
@@ -254,7 +254,7 @@ googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: googletest-build/goog
 googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=24,25 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=34,35 "Built target gmock_main"
 .PHONY : googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -271,7 +271,7 @@ gmock_main: googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 # codegen rule for target.
 googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=24,25 "Finished codegen for target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=34,35 "Finished codegen for target gmock_main"
 .PHONY : googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen
 
 # clean rule for target.
@@ -286,7 +286,7 @@ googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f googletest-build\googletest\CMakeFiles\gtest.dir\build.make googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest-build\googletest\CMakeFiles\gtest.dir\build.make googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=26,27 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=36,37 "Built target gtest"
 .PHONY : googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -303,7 +303,7 @@ gtest: googletest-build/googletest/CMakeFiles/gtest.dir/rule
 # codegen rule for target.
 googletest-build/googletest/CMakeFiles/gtest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f googletest-build\googletest\CMakeFiles\gtest.dir\build.make googletest-build/googletest/CMakeFiles/gtest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=26,27 "Finished codegen for target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=36,37 "Finished codegen for target gtest"
 .PHONY : googletest-build/googletest/CMakeFiles/gtest.dir/codegen
 
 # clean rule for target.
@@ -318,7 +318,7 @@ googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 googletest-build/googletest/CMakeFiles/gtest_main.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=28,29 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=38,39 "Built target gtest_main"
 .PHONY : googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -335,7 +335,7 @@ gtest_main: googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 # codegen rule for target.
 googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=28,29 "Finished codegen for target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=38,39 "Finished codegen for target gtest_main"
 .PHONY : googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen
 
 # clean rule for target.

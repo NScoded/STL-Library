@@ -1,5 +1,0 @@
-if(EXISTS "D:/Git pull/STL-Library/build/DynamicArrayTests_e3b0c442_tests.cmake")
-  include("D:/Git pull/STL-Library/build/DynamicArrayTests_e3b0c442_tests.cmake")
-else()
-  add_test(DynamicArrayTests_NOT_BUILT DynamicArrayTests_NOT_BUILT)
-endif()

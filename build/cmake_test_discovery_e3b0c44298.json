@@ -1,7 +1,402 @@
 {
-  "tests": 82,
+  "tests": 149,
   "name": "AllTests",
   "testsuites": [
+    {
+      "name": "HashMapGetTest",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "GetSingleElement",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 5
+        },
+        {
+          "name": "GetMultipleElements",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 14
+        },
+        {
+          "name": "GetUpdatedValue",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 27
+        },
+        {
+          "name": "GetNegativeKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 37
+        },
+        {
+          "name": "GetZeroKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 46
+        },
+        {
+          "name": "GetStringKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 55
+        },
+        {
+          "name": "GetNonExistingKeyThrows",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 66
+        },
+        {
+          "name": "GetAfterRemoveThrows",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "name": "HashMapSizeTest",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "EmptyMapSizeIsZero",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\SizeTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "SizeAfterSingleInsert",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\SizeTests.cpp",
+          "line": 11
+        },
+        {
+          "name": "SizeAfterMultipleInserts",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\SizeTests.cpp",
+          "line": 20
+        },
+        {
+          "name": "DuplicateKeyDoesNotIncreaseSize",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\SizeTests.cpp",
+          "line": 30
+        },
+        {
+          "name": "SizeAfterRemove",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\SizeTests.cpp",
+          "line": 40
+        },
+        {
+          "name": "SizeAfterClear",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\SizeTests.cpp",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "name": "HashMapCapacityTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "DefaultCapacity",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\CapacityTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "CustomCapacity",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\CapacityTests.cpp",
+          "line": 11
+        },
+        {
+          "name": "CapacityAfterInsertWithoutRehash",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\CapacityTests.cpp",
+          "line": 18
+        },
+        {
+          "name": "CapacityAfterRehash",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\CapacityTests.cpp",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "name": "HashMapRehashTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "CapacityDoublesAfterThreshold",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "AllElementsRemainAfterRehash",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
+          "line": 16
+        },
+        {
+          "name": "LoadFactorAfterRehash",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
+          "line": 32
+        },
+        {
+          "name": "DuplicateKeyDoesNotTriggerExtraRehash",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
+          "line": 42
+        },
+        {
+          "name": "MultipleRehashes",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "name": "HashMapClearTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "ClearEmptyMap",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ClearTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "ClearAfterSingleInsert",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ClearTests.cpp",
+          "line": 14
+        },
+        {
+          "name": "ClearAfterMultipleInserts",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ClearTests.cpp",
+          "line": 27
+        },
+        {
+          "name": "InsertAfterClear",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ClearTests.cpp",
+          "line": 43
+        },
+        {
+          "name": "CapacityRemainsSameAfterClear",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ClearTests.cpp",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "name": "HashMapLoadFactorTest",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "EmptyMap",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\LoadFactorTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "OneElement",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\LoadFactorTests.cpp",
+          "line": 11
+        },
+        {
+          "name": "MultipleElements",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\LoadFactorTests.cpp",
+          "line": 20
+        },
+        {
+          "name": "DuplicateKeyDoesNotChangeLoadFactor",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\LoadFactorTests.cpp",
+          "line": 31
+        },
+        {
+          "name": "LoadFactorAfterRemove",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\LoadFactorTests.cpp",
+          "line": 41
+        },
+        {
+          "name": "LoadFactorAfterClear",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\LoadFactorTests.cpp",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "name": "HashMapExistsTest",
+      "tests": 9,
+      "testsuite": [
+        {
+          "name": "ExistingKeyReturnsTrue",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ExistsTests.cpp",
+          "line": 5
+        },
+        {
+          "name": "NonExistingKeyReturnsFalse",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ExistsTests.cpp",
+          "line": 14
+        },
+        {
+          "name": "EmptyMapReturnsFalse",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ExistsTests.cpp",
+          "line": 23
+        },
+        {
+          "name": "NegativeKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ExistsTests.cpp",
+          "line": 30
+        },
+        {
+          "name": "ZeroKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ExistsTests.cpp",
+          "line": 40
+        },
+        {
+          "name": "AfterRemoveReturnsFalse",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ExistsTests.cpp",
+          "line": 49
+        },
+        {
+          "name": "MultipleElements",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ExistsTests.cpp",
+          "line": 59
+        },
+        {
+          "name": "StringKeys",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ExistsTests.cpp",
+          "line": 72
+        },
+        {
+          "name": "DuplicateInsertStillExists",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ExistsTests.cpp",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "name": "HashMapRemoveTest",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "RemoveExistingKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RemoveTests.cpp",
+          "line": 5
+        },
+        {
+          "name": "RemoveFromMultipleElements",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RemoveTests.cpp",
+          "line": 16
+        },
+        {
+          "name": "RemoveFirstInsertedElement",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RemoveTests.cpp",
+          "line": 32
+        },
+        {
+          "name": "RemoveLastInsertedElement",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RemoveTests.cpp",
+          "line": 48
+        },
+        {
+          "name": "RemoveMiddleElement",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RemoveTests.cpp",
+          "line": 64
+        },
+        {
+          "name": "RemoveNegativeKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RemoveTests.cpp",
+          "line": 80
+        },
+        {
+          "name": "RemoveZeroKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RemoveTests.cpp",
+          "line": 91
+        },
+        {
+          "name": "RemoveNonExistingKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RemoveTests.cpp",
+          "line": 102
+        },
+        {
+          "name": "RemoveFromEmptyMap",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RemoveTests.cpp",
+          "line": 109
+        },
+        {
+          "name": "RemoveAllElements",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RemoveTests.cpp",
+          "line": 116
+        }
+      ]
+    },
+    {
+      "name": "HashMapInsertTest",
+      "tests": 9,
+      "testsuite": [
+        {
+          "name": "InsertSingleElement",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 5
+        },
+        {
+          "name": "InsertMultipleElements",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 16
+        },
+        {
+          "name": "InsertDuplicateKeyUpdatesValue",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 31
+        },
+        {
+          "name": "InsertNegativeKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 42
+        },
+        {
+          "name": "InsertZeroKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 52
+        },
+        {
+          "name": "InsertManyElements",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 62
+        },
+        {
+          "name": "InsertStringKeys",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 80
+        },
+        {
+          "name": "InsertAfterDuplicateUpdatesOnlyValue",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 92
+        },
+        {
+          "name": "InsertMaintainsOtherElements",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 104
+        }
+      ]
+    },
+    {
+      "name": "HashMapConstructorTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "DefaultConstructorInitializesEmptyMap",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ConstructorTests.cpp",
+          "line": 5
+        },
+        {
+          "name": "ConstructorCreatesIndependentObjects",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ConstructorTests.cpp",
+          "line": 14
+        },
+        {
+          "name": "EmptyMapDoesNotContainAnyKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ConstructorTests.cpp",
+          "line": 27
+        },
+        {
+          "name": "EmptyMapThrowsOnGet",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ConstructorTests.cpp",
+          "line": 36
+        },
+        {
+          "name": "ConstructorWorksForDifferentKeyValueTypes",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\ConstructorTests.cpp",
+          "line": 43
+        }
+      ]
+    },
     {
       "name": "LinkedListExistsTest",
       "tests": 5,

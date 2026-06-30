@@ -1,1 +1,2 @@
-3:LinkedListInsertTest.InsertAtEnd
+8:HashMapRemoveTest.RemoveNonExistingKeyThrows
+9:HashMapRemoveTest.RemoveFromEmptyMapThrows

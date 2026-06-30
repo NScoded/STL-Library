@@ -1,0 +1,5 @@
+if(EXISTS "D:/Git pull/STL-Library/build/Tests_e3b0c442_tests.cmake")
+  include("D:/Git pull/STL-Library/build/Tests_e3b0c442_tests.cmake")
+else()
+  add_test(Tests_NOT_BUILT Tests_NOT_BUILT)
+endif()

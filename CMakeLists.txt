@@ -28,7 +28,7 @@ endif()
 add_subdirectory(${GTEST_ROOT} googletest-build)
 
 # Tests
-add_executable(DynamicArrayTests
+add_executable(Tests
     tests/main.cpp
     tests/DynamicArray/RemoveTests.cpp
     tests/DynamicArray/InsertTests.cpp
@@ -49,16 +49,29 @@ add_executable(DynamicArrayTests
     tests/LinkedList/ReverseTests.cpp
     tests/LinkedList/LengthTests.cpp
     tests/LinkedList/ExistsTests.cpp
+
+
+    tests/HashMap/ConstructorTests.cpp
+    tests/HashMap/InsertTests.cpp
+    tests/HashMap/RemoveTests.cpp
+    tests/HashMap/ExistsTests.cpp
+    tests/HashMap/LoadFactorTests.cpp
+    tests/HashMap/ClearTests.cpp
+    tests/HashMap/RehashTests.cpp
+    tests/HashMap/CapacityTests.cpp
+    tests/HashMap/SizeTests.cpp
+    tests/HashMap/GetTests.cpp
+    
 )
 
-target_include_directories(DynamicArrayTests PRIVATE
+target_include_directories(Tests PRIVATE
     ${PROJECT_SOURCE_DIR}/include
 )
 
-target_link_libraries(DynamicArrayTests PRIVATE
+target_link_libraries(Tests PRIVATE
     gtest
     gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(DynamicArrayTests)
+gtest_discover_tests(Tests)
