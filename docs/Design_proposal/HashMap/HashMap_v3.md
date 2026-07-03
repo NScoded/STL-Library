@@ -84,9 +84,16 @@ Shallow copying is avoided because shared memory may lead to `dangling pointers`
 
 
 ## Section 4 - Design Decision
-`Proposed design reason`    
-Using separate chaining for collision resolution - Easy insertion and deletion
-Rehashing after reaching load factor 75% (0.75).
 
-`Rejected design reason`  
-Rejected linear probing because primary clustering increases the number of probes and degrades performance.
+
+ Implemented as a **template class** to support different key and value types.
+
+ Used **Separate Chaining** for collision handling, where each bucket stores a linked list of key-value pairs.
+ 
+ Buckets are stored in the custom **DynamicArray**, making the implementation modular and reusable.
+
+ A custom **Pair** structure is used instead of `std::pair` to avoid STL dependencies.
+
+ Supports **custom hash functions** through the `MyHash` functor, allowing user-defined key types.
+
+ Performs **automatic rehashing** when the load factor exceeds the threshold to maintain efficient average-case performance.

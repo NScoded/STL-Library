@@ -1,9 +1,10 @@
 #pragma once
 
 #include <string>
-#include <sstream>
 #include <cstddef>
 #include <iostream>
+#include <cstdint>
+#include <cstring>
 
 
 template<typename T>
@@ -17,26 +18,36 @@ struct MyHash {
 
 
 
-/* int specialization */
+// int specialization 
 template<>
 struct MyHash<int> {
     
         size_t operator()(int key) const {
+            
+            //Knuth's Multiplicative Constant
             return static_cast<size_t>(key)*2654435761u;
         }    
     };    
     
-    
-    /* long long specialization */
+    // long specialisation
     template<>
-    struct MyHash<long long> {
+    struct MyHash<long> {
+
+        size_t operator()(long key) const {
+            
+            return static_cast<size_t>(key) * 2654435761ul; // literal suffix, treat it as ul
+        }
+    };
+    // long long specialization
+    template<>
+    struct MyHash<long long > {
         
         size_t operator()(long long key) const {
             return static_cast<size_t>(key)*2654435761u;
         }
     };
     
-    /* char specialization */
+    // char specialization
     template<>
     struct MyHash<char> {
         
@@ -45,7 +56,7 @@ struct MyHash<int> {
         }
     };
     
-    /* string specialization */
+    // string specialization 
     template<>
     struct MyHash<std::string> {
         
@@ -54,10 +65,39 @@ struct MyHash<int> {
             size_t hashValue = 0;
             
             for(char ch : str) {
+                // polynomial rolling
                 hashValue = hashValue * 31 + static_cast<unsigned char>(ch);
             }
             
             return hashValue*2654435761u;
+        }
+    };
+
+    // flaot specialization
+    template<>
+    struct MyHash<float> {
+
+        size_t operator()(float key) const {
+
+            uint32_t bits; // platform dependent nhi hota
+            std::memcpy(&bits, &key, sizeof(float));
+
+            return static_cast<size_t>(bits) * 2654435761u;
+        }
+    };
+
+
+
+    // double
+    template<>
+    struct MyHash<double> {
+
+        size_t operator()(double key) const {
+
+            uint64_t bits;
+            std::memcpy(&bits, &key, sizeof(double));
+
+            return static_cast<size_t>(bits) * 2654435761ull;
         }
     };
     

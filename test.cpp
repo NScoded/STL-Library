@@ -1,14 +1,11 @@
 #include <iostream>
-#include <sstream>
+#include "include/HashMap.h"
 using namespace std;
 
+
+
 int main() {
-    int *p=nullptr;
-    int *q=NULL;
-    cout<<p<<endl;
-    cout<<q<<endl;
+    HashMap< long long ,char>map;
     
-
     
-
 }
