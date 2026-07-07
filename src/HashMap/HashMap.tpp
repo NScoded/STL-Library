@@ -14,11 +14,23 @@ HashMap<K,V>::Pair::Pair(K k, V v){
 // HashMap Constructor
 //
 template<typename K, typename V>
-HashMap<K,V>::HashMap(int capacity){
-    bucketCount=capacity;
-    elementCount=0;
-    for(int i=0;i<bucketCount;i++){
-        buckets.push_back(LinkedList<Pair>());
+HashMap<K,V>::HashMap(int capacity)
+{
+    if(capacity <= 0)
+        throw std::invalid_argument("Capacity must be greater than zero");
+
+    bucketCount = capacity;
+    elementCount = 0;
+
+    try
+    {
+        for(int i = 0; i < bucketCount; i++)
+            buckets.push_back(LinkedList<Pair>());
+    }
+    catch(...)
+    {
+        buckets.clear();
+        throw;
     }
 }
 
@@ -27,6 +39,9 @@ HashMap<K,V>::HashMap(int capacity){
 //
 template<typename K, typename V>
 size_t HashMap<K,V>::hash(const K& key) const {
+
+    if(bucketCount == 0)
+        throw std::runtime_error("HashMap has zero buckets");
 
     MyHash<K> hasher;
     return hasher(key) % bucketCount;
@@ -38,30 +53,35 @@ size_t HashMap<K,V>::hash(const K& key) const {
 template<typename K, typename V>
 void HashMap<K,V>::insert(const K& key, const V& value)
 {
-    size_t index = hash(key);
-
-    LinkedList<Pair>& bucket = buckets[index];
-
-    typename LinkedList<Pair>::Node* curr = bucket.head;
-
-    while(curr)
+    try
     {
-        // operator == should be defined for key type
-        if(curr->data.key == key)
+        size_t index = hash(key);
+
+        LinkedList<Pair>& bucket = buckets[index];
+
+        typename LinkedList<Pair>::Node* curr = bucket.head;
+
+        while(curr)
         {
-            curr->data.value = value;
-            return;
+            if(curr->data.key == key)
+            {
+                curr->data.value = value;
+                return;
+            }
+
+            curr = curr->next;
         }
 
-        curr = curr->next;
+        bucket.append(Pair(key, value));
+        elementCount++;
+
+        if(loadFactor() > 0.75f)
+            rehash();
     }
-    // same key nahi mili to last me new pair append kardo
-    bucket.append(Pair(key, value));
-    elementCount++;
-
-
-    if(loadFactor() > 0.75f)
-        rehash();
+    catch(...)
+    {
+        throw;
+    }
 }
 
 //
@@ -107,7 +127,7 @@ V& HashMap<K,V>::get(const K& key)
         curr = curr->next;
     }
 
-    throw std::runtime_error("Key not found");
+    throw std::out_of_range("Key not found");
 }
 
 //
@@ -121,15 +141,16 @@ bool HashMap<K,V>::remove(const K& key)
     LinkedList<Pair>& bucket = buckets[index];
 
     typename LinkedList<Pair>::Node* curr = bucket.head;
-
+    int i=0;
     while(curr)
     {
         if(curr->data.key == key)
         {
-            bucket.remove(curr->data);
+            bucket.remove(i);
             elementCount--;
             return true;
         }
+        i++;
 
         curr = curr->next;
     }
@@ -191,28 +212,30 @@ void HashMap<K,V>::rehash()
 
     bucketCount *= 2;
 
-    buckets.clear();
-
-    for(int i = 0; i < bucketCount; i++)
+    try
     {
-        buckets.push_back(LinkedList<Pair>());
-    }
+        buckets.clear();
 
-    elementCount = 0;
+        for(int i = 0; i < bucketCount; i++)
+            buckets.push_back(LinkedList<Pair>());
 
-    for(int i = 0; i < oldBucketCount; i++)
-    {
-        typename LinkedList<Pair>::Node* curr =
-            oldBuckets[i].head;
+        elementCount = 0;
 
-        while(curr)
+        for(int i = 0; i < oldBucketCount; i++)
         {
-            insert(
-                curr->data.key,
-                curr->data.value
-            );
+            typename LinkedList<Pair>::Node* curr = oldBuckets[i].head;
 
-            curr = curr->next;
+            while(curr)
+            {
+                insert(curr->data.key, curr->data.value);
+                curr = curr->next;
+            }
         }
+    }
+    catch(...)
+    {
+        buckets = oldBuckets;
+        bucketCount = oldBucketCount;
+        throw;
     }
 }

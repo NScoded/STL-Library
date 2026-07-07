@@ -37,7 +37,7 @@ TEST(HashMapConstructorTest, EmptyMapThrowsOnGet)
 {
     HashMap<int, std::string> map;
 
-    EXPECT_THROW(map.get(10), std::runtime_error);
+    EXPECT_THROW(map.get(10), std::out_of_range);
 }
 
 TEST(HashMapConstructorTest, ConstructorWorksForDifferentKeyValueTypes)

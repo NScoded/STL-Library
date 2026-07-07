@@ -148,11 +148,17 @@ CMakeFiles/STL_Library.dir/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/istream \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc \
  D:\Git\ pull\STL-Library\include/MyHash.h \
- C:/msys64/ucrt64/include/c++/15.2.0/sstream \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/sstream.tcc \
+ C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/cstring \
+ C:/msys64/ucrt64/include/string.h \
+ C:/msys64/ucrt64/include/sec_api/string_s.h \
  D:/Git\ pull/STL-Library/src/HashMap/HashMap.tpp \
  D:\Git\ pull\STL-Library\include/Redis-lite.h \
  D:/Git\ pull/STL-Library/src/Redis-lite/Redis-lite.tpp \
+ C:/msys64/ucrt64/include/c++/15.2.0/sstream \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/sstream.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/stdc++.h \
  C:/msys64/ucrt64/include/c++/15.2.0/cassert \
  C:/msys64/ucrt64/include/assert.h \
@@ -166,9 +172,6 @@ CMakeFiles/STL_Library.dir/main.cpp.obj: \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
  C:/msys64/ucrt64/include/stdarg.h \
  C:/msys64/ucrt64/include/_mingw_stdarg.h \
- C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
- C:/msys64/ucrt64/include/stdint.h \
  C:/msys64/ucrt64/include/c++/15.2.0/algorithm \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algo.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/algorithmfwd.h \
@@ -241,9 +244,6 @@ CMakeFiles/STL_Library.dir/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/csignal \
- C:/msys64/ucrt64/include/c++/15.2.0/cstring \
- C:/msys64/ucrt64/include/string.h \
- C:/msys64/ucrt64/include/sec_api/string_s.h \
  C:/msys64/ucrt64/include/c++/15.2.0/ctime \
  C:/msys64/ucrt64/include/c++/15.2.0/cfenv \
  C:/msys64/ucrt64/include/c++/15.2.0/fenv.h \

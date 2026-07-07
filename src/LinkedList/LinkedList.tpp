@@ -218,14 +218,33 @@ LinkedList<T>::reverse(){
 
 // remove by value
 template<typename T>void
-LinkedList<T>::remove(T val){
+LinkedList<T>::remove(int index){
+    if(index>=size || index<0) throw std::out_of_range("Out of Range");
+
+    if(index==size-1){
+        pop();
+        return ;
+
+    }
+    
+    if(index==0){
+        if(head==tail){
+            tail=nullptr;
+        }
+        Node *temp=head;
+        head=head->next;
+        delete temp;
+        size--;
+        return;
+    }
     Node*prev=head;
     Node*nxt=head;
-
-    while(nxt){
-        if(nxt->data==val)break;
+    int i=0;
+    
+    while(i<index){
         prev=nxt;
         nxt=nxt->next;
+        i++;
     }
 
     if(nxt==nullptr){
@@ -233,22 +252,7 @@ LinkedList<T>::remove(T val){
         return;
     }
     
-    if(nxt==tail){
-        pop();
-        return;
-    }
-    
     size--;
-    
-    if(nxt==prev){
-        
-        if(head==tail){
-            tail=nullptr;
-        }
-        head=nxt->next;
-        delete nxt;
-        return;
-    }
     
     prev->next=nxt->next;
     delete nxt;

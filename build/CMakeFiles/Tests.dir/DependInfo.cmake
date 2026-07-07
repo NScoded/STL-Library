@@ -8,6 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/Git pull/STL-Library/tests/DynamicArray/CapacityTests.cpp" "CMakeFiles/Tests.dir/tests/DynamicArray/CapacityTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/DynamicArray/CapacityTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/DynamicArray/ClearTests.cpp" "CMakeFiles/Tests.dir/tests/DynamicArray/ClearTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/DynamicArray/ClearTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/DynamicArray/ConstructorTests.cpp" "CMakeFiles/Tests.dir/tests/DynamicArray/ConstructorTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/DynamicArray/ConstructorTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/DynamicArray/CopyAssignmentTests.cpp" "CMakeFiles/Tests.dir/tests/DynamicArray/CopyAssignmentTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/DynamicArray/CopyAssignmentTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/DynamicArray/CopyConstructorTests.cpp" "CMakeFiles/Tests.dir/tests/DynamicArray/CopyConstructorTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/DynamicArray/CopyConstructorTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/DynamicArray/InsertTests.cpp" "CMakeFiles/Tests.dir/tests/DynamicArray/InsertTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/DynamicArray/InsertTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/DynamicArray/PopBackTests.cpp" "CMakeFiles/Tests.dir/tests/DynamicArray/PopBackTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/DynamicArray/PopBackTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/DynamicArray/PushBackTests.cpp" "CMakeFiles/Tests.dir/tests/DynamicArray/PushBackTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/DynamicArray/PushBackTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/DynamicArray/RemoveTests.cpp" "CMakeFiles/Tests.dir/tests/DynamicArray/RemoveTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/DynamicArray/RemoveTests.cpp.obj.d"
+  "D:/Git pull/STL-Library/tests/DynamicArray/SizeTests.cpp" "CMakeFiles/Tests.dir/tests/DynamicArray/SizeTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/DynamicArray/SizeTests.cpp.obj.d"
   "D:/Git pull/STL-Library/tests/HashMap/CapacityTests.cpp" "CMakeFiles/Tests.dir/tests/HashMap/CapacityTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/HashMap/CapacityTests.cpp.obj.d"
   "D:/Git pull/STL-Library/tests/HashMap/ClearTests.cpp" "CMakeFiles/Tests.dir/tests/HashMap/ClearTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/HashMap/ClearTests.cpp.obj.d"
   "D:/Git pull/STL-Library/tests/HashMap/ConstructorTests.cpp" "CMakeFiles/Tests.dir/tests/HashMap/ConstructorTests.cpp.obj" "gcc" "CMakeFiles/Tests.dir/tests/HashMap/ConstructorTests.cpp.obj.d"

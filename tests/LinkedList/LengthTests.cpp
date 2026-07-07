@@ -26,7 +26,7 @@ TEST(LinkedListLengthTest, AfterRemoval)
     list.append(10);
     list.append(20);
 
-    list.remove(10);
+    list.remove(0);
 
     EXPECT_EQ(list.length(), 1);
 }

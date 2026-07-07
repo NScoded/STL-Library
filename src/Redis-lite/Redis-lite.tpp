@@ -1,5 +1,7 @@
 #include "../../include/Redis-lite.h"
 #include <iostream>
+#include <string>
+#include <sstream>
 using namespace std;
 
 
@@ -83,15 +85,15 @@ template<typename K,typename V> string Redis_lite<K,V>::To_lower(string s){
 
 
 // get()
-template<typename K,typename V> bool Redis_lite<K,V>::get(const K& key){
+template<typename K,typename V> V Redis_lite<K,V>::get(const K& key){
     if(database.exists(key)){
         
         cout<<database.get(key)<<endl;
-        return true;
+        return database.get(key);
     }
     else{
         cout<< "Key not found!"<<endl;
-        return false;
+        throw std::out_of_range("Key not Found");
     }
 }
 
@@ -144,3 +146,4 @@ template<typename K,typename V> size_t Redis_lite<K,V>::size()const{
     cout<<database.size()<<endl;
     return database.size();
 }
+

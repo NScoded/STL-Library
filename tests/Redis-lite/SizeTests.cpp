@@ -29,3 +29,4 @@ TEST(RedisLiteSizeTest, AfterDeletion)
 
     EXPECT_EQ(redis.size(), 1);
 }
+

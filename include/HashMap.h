@@ -21,7 +21,7 @@ class HashMap {
     };
     DynamicArray<LinkedList<Pair>> buckets;
     int bucketCount;
-    int elementCount;
+    int elementCount; 
     size_t hash(const K& key) const;
     void rehash();
 

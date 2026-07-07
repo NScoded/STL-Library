@@ -11,7 +11,7 @@ template<typename T>
 struct MyHash {
 
     size_t operator()(const T& key) const {
-        return reinterpret_cast<size_t>(this);
+        return reinterpret_cast<size_t>(&key);
         
     }
 };

@@ -151,6 +151,15 @@ set_tests_properties([=[RedisLiteSetTest.UpdateExistingKey]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
+add_test([=[RedisLiteSetTest.SameKey]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteSetTest.SameKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RedisLiteSetTest.SameKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\Redis-lite\SetTests.cpp:36]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
 add_test([=[RedisLiteConstructorTest.DefaultConstructor]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=RedisLiteConstructorTest.DefaultConstructor]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[RedisLiteConstructorTest.DefaultConstructor]=]
   PROPERTIES
@@ -164,7 +173,7 @@ add_test([=[HashMapGetTest.GetSingleElement]=]  [==[D:/Git pull/STL-Library/buil
 set_tests_properties([=[HashMapGetTest.GetSingleElement]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:5]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:9]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -173,7 +182,7 @@ add_test([=[HashMapGetTest.GetMultipleElements]=]  [==[D:/Git pull/STL-Library/b
 set_tests_properties([=[HashMapGetTest.GetMultipleElements]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:14]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:21]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -182,7 +191,7 @@ add_test([=[HashMapGetTest.GetUpdatedValue]=]  [==[D:/Git pull/STL-Library/build
 set_tests_properties([=[HashMapGetTest.GetUpdatedValue]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:27]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:37]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -191,7 +200,7 @@ add_test([=[HashMapGetTest.GetNegativeKey]=]  [==[D:/Git pull/STL-Library/build/
 set_tests_properties([=[HashMapGetTest.GetNegativeKey]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:37]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:50]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -200,7 +209,7 @@ add_test([=[HashMapGetTest.GetZeroKey]=]  [==[D:/Git pull/STL-Library/build/Test
 set_tests_properties([=[HashMapGetTest.GetZeroKey]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:46]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:62]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -209,7 +218,34 @@ add_test([=[HashMapGetTest.GetStringKey]=]  [==[D:/Git pull/STL-Library/build/Te
 set_tests_properties([=[HashMapGetTest.GetStringKey]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:55]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:74]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.GetLargeIntegerKeys]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapGetTest.GetLargeIntegerKeys]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.GetLargeIntegerKeys]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:88]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.GetEmptyStringKey]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapGetTest.GetEmptyStringKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.GetEmptyStringKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:102]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.GetAfterRehash]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapGetTest.GetAfterRehash]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.GetAfterRehash]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:114]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -218,7 +254,7 @@ add_test([=[HashMapGetTest.GetNonExistingKeyThrows]=]  [==[D:/Git pull/STL-Libra
 set_tests_properties([=[HashMapGetTest.GetNonExistingKeyThrows]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:66]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:128]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -227,7 +263,34 @@ add_test([=[HashMapGetTest.GetAfterRemoveThrows]=]  [==[D:/Git pull/STL-Library/
 set_tests_properties([=[HashMapGetTest.GetAfterRemoveThrows]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:73]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:138]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.GetFromEmptyMapThrows]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapGetTest.GetFromEmptyMapThrows]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.GetFromEmptyMapThrows]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:151]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.GetMissingKeyAmongExistingKeysThrows]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapGetTest.GetMissingKeyAmongExistingKeysThrows]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.GetMissingKeyAmongExistingKeysThrows]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:161]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapGetTest.GetDoesNotModifyMap]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapGetTest.GetDoesNotModifyMap]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapGetTest.GetDoesNotModifyMap]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp:175]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -326,7 +389,7 @@ add_test([=[HashMapRehashTest.CapacityDoublesAfterThreshold]=]  [==[D:/Git pull/
 set_tests_properties([=[HashMapRehashTest.CapacityDoublesAfterThreshold]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:4]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:7]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -335,7 +398,7 @@ add_test([=[HashMapRehashTest.AllElementsRemainAfterRehash]=]  [==[D:/Git pull/S
 set_tests_properties([=[HashMapRehashTest.AllElementsRemainAfterRehash]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:16]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:22]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -344,7 +407,7 @@ add_test([=[HashMapRehashTest.LoadFactorAfterRehash]=]  [==[D:/Git pull/STL-Libr
 set_tests_properties([=[HashMapRehashTest.LoadFactorAfterRehash]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:32]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:41]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -353,7 +416,7 @@ add_test([=[HashMapRehashTest.DuplicateKeyDoesNotTriggerExtraRehash]=]  [==[D:/G
 set_tests_properties([=[HashMapRehashTest.DuplicateKeyDoesNotTriggerExtraRehash]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:42]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:54]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -362,7 +425,70 @@ add_test([=[HashMapRehashTest.MultipleRehashes]=]  [==[D:/Git pull/STL-Library/b
 set_tests_properties([=[HashMapRehashTest.MultipleRehashes]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:54]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:69]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRehashTest.RehashPreservesUpdatedValues]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapRehashTest.RehashPreservesUpdatedValues]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRehashTest.RehashPreservesUpdatedValues]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:87]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRehashTest.RehashPreservesNegativeKeys]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapRehashTest.RehashPreservesNegativeKeys]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRehashTest.RehashPreservesNegativeKeys]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:103]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRehashTest.RehashPreservesZeroKey]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapRehashTest.RehashPreservesZeroKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRehashTest.RehashPreservesZeroKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:119]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRehashTest.RehashDoesNotChangeSize]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapRehashTest.RehashDoesNotChangeSize]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRehashTest.RehashDoesNotChangeSize]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:134]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRehashTest.CapacityDoesNotGrowBeforeThreshold]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapRehashTest.CapacityDoesNotGrowBeforeThreshold]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRehashTest.CapacityDoesNotGrowBeforeThreshold]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:147]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRehashTest.InsertWorksAfterRehash]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapRehashTest.InsertWorksAfterRehash]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRehashTest.InsertWorksAfterRehash]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:160]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapRehashTest.ConsecutiveRehashesPreserveData]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapRehashTest.ConsecutiveRehashesPreserveData]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapRehashTest.ConsecutiveRehashesPreserveData]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\RehashTests.cpp:176]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -641,7 +767,7 @@ add_test([=[HashMapInsertTest.InsertSingleElement]=]  [==[D:/Git pull/STL-Librar
 set_tests_properties([=[HashMapInsertTest.InsertSingleElement]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:5]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:8]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -650,7 +776,7 @@ add_test([=[HashMapInsertTest.InsertMultipleElements]=]  [==[D:/Git pull/STL-Lib
 set_tests_properties([=[HashMapInsertTest.InsertMultipleElements]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:16]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:22]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -659,7 +785,7 @@ add_test([=[HashMapInsertTest.InsertDuplicateKeyUpdatesValue]=]  [==[D:/Git pull
 set_tests_properties([=[HashMapInsertTest.InsertDuplicateKeyUpdatesValue]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:31]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:40]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -668,7 +794,7 @@ add_test([=[HashMapInsertTest.InsertNegativeKey]=]  [==[D:/Git pull/STL-Library/
 set_tests_properties([=[HashMapInsertTest.InsertNegativeKey]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:42]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:54]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -677,7 +803,7 @@ add_test([=[HashMapInsertTest.InsertZeroKey]=]  [==[D:/Git pull/STL-Library/buil
 set_tests_properties([=[HashMapInsertTest.InsertZeroKey]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:52]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:67]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -686,7 +812,7 @@ add_test([=[HashMapInsertTest.InsertManyElements]=]  [==[D:/Git pull/STL-Library
 set_tests_properties([=[HashMapInsertTest.InsertManyElements]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:62]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:80]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -695,7 +821,7 @@ add_test([=[HashMapInsertTest.InsertStringKeys]=]  [==[D:/Git pull/STL-Library/b
 set_tests_properties([=[HashMapInsertTest.InsertStringKeys]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:80]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:99]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -704,7 +830,7 @@ add_test([=[HashMapInsertTest.InsertAfterDuplicateUpdatesOnlyValue]=]  [==[D:/Gi
 set_tests_properties([=[HashMapInsertTest.InsertAfterDuplicateUpdatesOnlyValue]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:92]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:114]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -713,7 +839,61 @@ add_test([=[HashMapInsertTest.InsertMaintainsOtherElements]=]  [==[D:/Git pull/S
 set_tests_properties([=[HashMapInsertTest.InsertMaintainsOtherElements]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:104]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:129]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapInsertTest.InsertTriggersRehash]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapInsertTest.InsertTriggersRehash]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapInsertTest.InsertTriggersRehash]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:148]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapInsertTest.InsertLargeIntegerKeys]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapInsertTest.InsertLargeIntegerKeys]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapInsertTest.InsertLargeIntegerKeys]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:165]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapInsertTest.InsertEmptyStringKey]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapInsertTest.InsertEmptyStringKey]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapInsertTest.InsertEmptyStringKey]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:179]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapInsertTest.InsertEmptyStringValue]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapInsertTest.InsertEmptyStringValue]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapInsertTest.InsertEmptyStringValue]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:192]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapInsertTest.InsertAfterRehash]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapInsertTest.InsertAfterRehash]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapInsertTest.InsertAfterRehash]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:205]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[HashMapInsertTest.InsertSameValueDifferentKeys]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=HashMapInsertTest.InsertSameValueDifferentKeys]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HashMapInsertTest.InsertSameValueDifferentKeys]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\HashMap\InsertTests.cpp:221]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -1064,7 +1244,7 @@ add_test([=[LinkedListRemoveTest.RemoveFromEmptyList]=]  [==[D:/Git pull/STL-Lib
 set_tests_properties([=[LinkedListRemoveTest.RemoveFromEmptyList]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\LinkedList\RemoveTests.cpp:79]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\LinkedList\RemoveTests.cpp:75]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -1073,7 +1253,7 @@ add_test([=[LinkedListRemoveTest.RemoveFirstOccurrenceOnly]=]  [==[D:/Git pull/S
 set_tests_properties([=[LinkedListRemoveTest.RemoveFirstOccurrenceOnly]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\LinkedList\RemoveTests.cpp:90]==]
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\LinkedList\RemoveTests.cpp:82]==]
     WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -1213,4 +1393,373 @@ set_tests_properties([=[LinkedListInsertHeadTest.InsertAfterClear]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
-set(Tests_TESTS [==[RedisLiteToLowerTest.ConvertUpperCase]==] [==[RedisLiteToLowerTest.MixedCase]==] [==[RedisLiteToLowerTest.AlreadyLowerCase]==] [==[RedisLiteSizeTest.EmptyDatabase]==] [==[RedisLiteSizeTest.AfterInsertion]==] [==[RedisLiteSizeTest.AfterDeletion]==] [==[RedisLiteGetTest.ExistingKey]==] [==[RedisLiteGetTest.NonExistingKey]==] [==[RedisLiteExistsTest.NonExistingKey]==] [==[RedisLiteExistsTest.ExistingKey]==] [==[RedisLiteDeleteTest.DeleteExistingKey]==] [==[RedisLiteDeleteTest.DeleteNonExistingKey]==] [==[RedisLiteClearTest.ClearDatabase]==] [==[RedisLiteClearTest.ClearEmptyDatabase]==] [==[RedisLiteSetTest.SetSingleKey]==] [==[RedisLiteSetTest.SetMultipleKeys]==] [==[RedisLiteSetTest.UpdateExistingKey]==] [==[RedisLiteConstructorTest.DefaultConstructor]==] [==[HashMapGetTest.GetSingleElement]==] [==[HashMapGetTest.GetMultipleElements]==] [==[HashMapGetTest.GetUpdatedValue]==] [==[HashMapGetTest.GetNegativeKey]==] [==[HashMapGetTest.GetZeroKey]==] [==[HashMapGetTest.GetStringKey]==] [==[HashMapGetTest.GetNonExistingKeyThrows]==] [==[HashMapGetTest.GetAfterRemoveThrows]==] [==[HashMapSizeTest.EmptyMapSizeIsZero]==] [==[HashMapSizeTest.SizeAfterSingleInsert]==] [==[HashMapSizeTest.SizeAfterMultipleInserts]==] [==[HashMapSizeTest.DuplicateKeyDoesNotIncreaseSize]==] [==[HashMapSizeTest.SizeAfterRemove]==] [==[HashMapSizeTest.SizeAfterClear]==] [==[HashMapCapacityTest.DefaultCapacity]==] [==[HashMapCapacityTest.CustomCapacity]==] [==[HashMapCapacityTest.CapacityAfterInsertWithoutRehash]==] [==[HashMapCapacityTest.CapacityAfterRehash]==] [==[HashMapRehashTest.CapacityDoublesAfterThreshold]==] [==[HashMapRehashTest.AllElementsRemainAfterRehash]==] [==[HashMapRehashTest.LoadFactorAfterRehash]==] [==[HashMapRehashTest.DuplicateKeyDoesNotTriggerExtraRehash]==] [==[HashMapRehashTest.MultipleRehashes]==] [==[HashMapClearTest.ClearEmptyMap]==] [==[HashMapClearTest.ClearAfterSingleInsert]==] [==[HashMapClearTest.ClearAfterMultipleInserts]==] [==[HashMapClearTest.InsertAfterClear]==] [==[HashMapClearTest.CapacityRemainsSameAfterClear]==] [==[HashMapLoadFactorTest.EmptyMap]==] [==[HashMapLoadFactorTest.OneElement]==] [==[HashMapLoadFactorTest.MultipleElements]==] [==[HashMapLoadFactorTest.DuplicateKeyDoesNotChangeLoadFactor]==] [==[HashMapLoadFactorTest.LoadFactorAfterRemove]==] [==[HashMapLoadFactorTest.LoadFactorAfterClear]==] [==[HashMapExistsTest.ExistingKeyReturnsTrue]==] [==[HashMapExistsTest.NonExistingKeyReturnsFalse]==] [==[HashMapExistsTest.EmptyMapReturnsFalse]==] [==[HashMapExistsTest.NegativeKey]==] [==[HashMapExistsTest.ZeroKey]==] [==[HashMapExistsTest.AfterRemoveReturnsFalse]==] [==[HashMapExistsTest.MultipleElements]==] [==[HashMapExistsTest.StringKeys]==] [==[HashMapExistsTest.DuplicateInsertStillExists]==] [==[HashMapRemoveTest.RemoveExistingKey]==] [==[HashMapRemoveTest.RemoveFromMultipleElements]==] [==[HashMapRemoveTest.RemoveFirstInsertedElement]==] [==[HashMapRemoveTest.RemoveLastInsertedElement]==] [==[HashMapRemoveTest.RemoveMiddleElement]==] [==[HashMapRemoveTest.RemoveNegativeKey]==] [==[HashMapRemoveTest.RemoveZeroKey]==] [==[HashMapRemoveTest.RemoveNonExistingKey]==] [==[HashMapRemoveTest.RemoveFromEmptyMap]==] [==[HashMapRemoveTest.RemoveAllElements]==] [==[HashMapInsertTest.InsertSingleElement]==] [==[HashMapInsertTest.InsertMultipleElements]==] [==[HashMapInsertTest.InsertDuplicateKeyUpdatesValue]==] [==[HashMapInsertTest.InsertNegativeKey]==] [==[HashMapInsertTest.InsertZeroKey]==] [==[HashMapInsertTest.InsertManyElements]==] [==[HashMapInsertTest.InsertStringKeys]==] [==[HashMapInsertTest.InsertAfterDuplicateUpdatesOnlyValue]==] [==[HashMapInsertTest.InsertMaintainsOtherElements]==] [==[HashMapConstructorTest.DefaultConstructorInitializesEmptyMap]==] [==[HashMapConstructorTest.ConstructorCreatesIndependentObjects]==] [==[HashMapConstructorTest.EmptyMapDoesNotContainAnyKey]==] [==[HashMapConstructorTest.EmptyMapThrowsOnGet]==] [==[HashMapConstructorTest.ConstructorWorksForDifferentKeyValueTypes]==] [==[LinkedListExistsTest.ExistingElement]==] [==[LinkedListExistsTest.NonExistingElement]==] [==[LinkedListExistsTest.EmptyList]==] [==[LinkedListExistsTest.FirstElementExists]==] [==[LinkedListExistsTest.LastElementExists]==] [==[LinkedListLengthTest.InitiallyZero]==] [==[LinkedListLengthTest.AfterInsertions]==] [==[LinkedListLengthTest.AfterRemoval]==] [==[LinkedListLengthTest.AfterClear]==] [==[LinkedListReverseTest.ReverseEmptyList]==] [==[LinkedListReverseTest.ReverseSingleElement]==] [==[LinkedListReverseTest.ReverseMultipleElements]==] [==[LinkedListReverseTest.ReverseTwiceReturnsOriginal]==] [==[LinkedListPopTest.PopLastElement]==] [==[LinkedListPopTest.PopUntilEmpty]==] [==[LinkedListPopTest.PopSingleElement]==] [==[LinkedListPopTest.PopFromEmptyList]==] [==[LinkedListAppendTest.AppendSingleElement]==] [==[LinkedListAppendTest.AppendMultipleElements]==] [==[LinkedListAppendTest.TailUpdatesCorrectly]==] [==[LinkedListAppendTest.AppendAfterClear]==] [==[LinkedListAppendTest.AppendLargeDataset]==] [==[LinkedListInsertTest.InsertAtBeginning]==] [==[LinkedListInsertTest.InsertAtMiddle]==] [==[LinkedListInsertTest.InsertAtEnd]==] [==[LinkedListInsertTest.InsertIntoEmptyList]==] [==[LinkedListInsertTest.InvalidNegativeIndex]==] [==[LinkedListInsertTest.InvalidLargeIndex]==] [==[LinkedListRemoveTest.RemoveHead]==] [==[LinkedListRemoveTest.RemoveMiddle]==] [==[LinkedListRemoveTest.RemoveTail]==] [==[LinkedListRemoveTest.RemoveOnlyElement]==] [==[LinkedListRemoveTest.RemoveNonExistingElement]==] [==[LinkedListRemoveTest.RemoveFromEmptyList]==] [==[LinkedListRemoveTest.RemoveFirstOccurrenceOnly]==] [==[LinkedListEqualityOperatorTest.EqualLists]==] [==[LinkedListEqualityOperatorTest.DifferentSizes]==] [==[LinkedListEqualityOperatorTest.DifferentValues]==] [==[LinkedListEqualityOperatorTest.EmptyLists]==] [==[LinkedListEqualityOperatorTest.OneEmptyOneNonEmpty]==] [==[LinkedListAssignmentOperatorTest.AssignPopulatedList]==] [==[LinkedListAssignmentOperatorTest.AssignEmptyList]==] [==[LinkedListAssignmentOperatorTest.SelfAssignment]==] [==[LinkedListAssignmentOperatorTest.DeepCopyVerification]==] [==[LinkedListAssignmentOperatorTest.OverwriteExistingList]==] [==[LinkedListInsertHeadTest.InsertSingleElement]==] [==[LinkedListInsertHeadTest.InsertMultipleElements]==] [==[LinkedListInsertHeadTest.TailRemainsFirstInsertedElement]==] [==[LinkedListInsertHeadTest.HeadChangesAfterEveryInsertion]==] [==[LinkedListInsertHeadTest.InsertAfterClear]==])
+add_test([=[DynamicArrayCopyAssignmentTest.NormalAssignment]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayCopyAssignmentTest.NormalAssignment]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayCopyAssignmentTest.NormalAssignment]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\CopyAssignmentTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayCopyAssignmentTest.SelfAssignment]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayCopyAssignmentTest.SelfAssignment]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayCopyAssignmentTest.SelfAssignment]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\CopyAssignmentTests.cpp:22]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayCopyAssignmentTest.DeepCopy]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayCopyAssignmentTest.DeepCopy]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayCopyAssignmentTest.DeepCopy]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\CopyAssignmentTests.cpp:36]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayCopyConstructorTest.DeepCopy]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayCopyConstructorTest.DeepCopy]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayCopyConstructorTest.DeepCopy]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\CopyConstructorTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayCopyConstructorTest.ModifyOriginal]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayCopyConstructorTest.ModifyOriginal]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayCopyConstructorTest.ModifyOriginal]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\CopyConstructorTests.cpp:20]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayCopyConstructorTest.EmptyArray]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayCopyConstructorTest.EmptyArray]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayCopyConstructorTest.EmptyArray]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\CopyConstructorTests.cpp:34]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayConstructorTest.DefaultConstructor]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayConstructorTest.DefaultConstructor]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayConstructorTest.DefaultConstructor]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\ConstructorTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayConstructorTest.CapacityValueConstructor]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayConstructorTest.CapacityValueConstructor]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayConstructorTest.CapacityValueConstructor]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\ConstructorTests.cpp:12]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayConstructorTest.CapacityOne]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayConstructorTest.CapacityOne]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayConstructorTest.CapacityOne]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\ConstructorTests.cpp:25]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayClearTest.ClearArray]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayClearTest.ClearArray]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayClearTest.ClearArray]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\ClearTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayClearTest.ClearEmptyArray]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayClearTest.ClearEmptyArray]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayClearTest.ClearEmptyArray]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\ClearTests.cpp:16]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayClearTest.ReuseAfterClear]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayClearTest.ReuseAfterClear]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayClearTest.ReuseAfterClear]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\ClearTests.cpp:25]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayCapacityTest.DefaultCapacity]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayCapacityTest.DefaultCapacity]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayCapacityTest.DefaultCapacity]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\CapacityTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayCapacityTest.CapacityGrows]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayCapacityTest.CapacityGrows]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayCapacityTest.CapacityGrows]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\CapacityTests.cpp:11]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayCapacityTest.CapacityAfterClear]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayCapacityTest.CapacityAfterClear]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayCapacityTest.CapacityAfterClear]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\CapacityTests.cpp:23]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArraySizeTest.InitiallyZero]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArraySizeTest.InitiallyZero]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArraySizeTest.InitiallyZero]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\SizeTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArraySizeTest.SizeAfterInsertions]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArraySizeTest.SizeAfterInsertions]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArraySizeTest.SizeAfterInsertions]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\SizeTests.cpp:11]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArraySizeTest.SizeAfterRemoval]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArraySizeTest.SizeAfterRemoval]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArraySizeTest.SizeAfterRemoval]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\SizeTests.cpp:21]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayPopBackTest.RemoveLastElement]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayPopBackTest.RemoveLastElement]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayPopBackTest.RemoveLastElement]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\PopBackTests.cpp:17]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayPopBackTest.RemoveAllElements]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayPopBackTest.RemoveAllElements]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayPopBackTest.RemoveAllElements]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\PopBackTests.cpp:25]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayPopBackStandalone.PopFromEmptyThrows]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayPopBackStandalone.PopFromEmptyThrows]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayPopBackStandalone.PopFromEmptyThrows]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\PopBackTests.cpp:33]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayPushBackTest.PushSingleElement]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayPushBackTest.PushSingleElement]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayPushBackTest.PushSingleElement]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\PushBackTests.cpp:4]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayPushBackTest.PushMultipleElements]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayPushBackTest.PushMultipleElements]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayPushBackTest.PushMultipleElements]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\PushBackTests.cpp:14]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayPushBackTest.PushTriggersResize]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayPushBackTest.PushTriggersResize]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayPushBackTest.PushTriggersResize]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\PushBackTests.cpp:27]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayPushBackTest.PushLargeDataset]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayPushBackTest.PushLargeDataset]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayPushBackTest.PushLargeDataset]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\PushBackTests.cpp:45]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayInsertTest.InsertAtBeginning]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayInsertTest.InsertAtBeginning]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayInsertTest.InsertAtBeginning]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\InsertTests.cpp:16]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayInsertTest.InsertAtMiddle]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayInsertTest.InsertAtMiddle]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayInsertTest.InsertAtMiddle]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\InsertTests.cpp:29]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayInsertTest.InsertAtEnd]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayInsertTest.InsertAtEnd]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayInsertTest.InsertAtEnd]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\InsertTests.cpp:42]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayInsertStandalone.InsertIntoEmptyArray]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayInsertStandalone.InsertIntoEmptyArray]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayInsertStandalone.InsertIntoEmptyArray]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\InsertTests.cpp:50]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayInsertStandalone.InsertTriggersResize]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayInsertStandalone.InsertTriggersResize]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayInsertStandalone.InsertTriggersResize]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\InsertTests.cpp:59]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayInsertStandalone.InsertNegativeIndexThrows]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayInsertStandalone.InsertNegativeIndexThrows]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayInsertStandalone.InsertNegativeIndexThrows]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\InsertTests.cpp:80]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayInsertStandalone.InsertPastEndThrows]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayInsertStandalone.InsertPastEndThrows]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayInsertStandalone.InsertPastEndThrows]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\InsertTests.cpp:86]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayInsertStandalone.InsertLargeDataset]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayInsertStandalone.InsertLargeDataset]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayInsertStandalone.InsertLargeDataset]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\InsertTests.cpp:94]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayRemoveTest.RemoveFromBeginning]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayRemoveTest.RemoveFromBeginning]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayRemoveTest.RemoveFromBeginning]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\RemoveTests.cpp:14]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayRemoveTest.RemoveFromMiddle]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayRemoveTest.RemoveFromMiddle]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayRemoveTest.RemoveFromMiddle]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\RemoveTests.cpp:25]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayRemoveTest.RemoveFromEnd]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayRemoveTest.RemoveFromEnd]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayRemoveTest.RemoveFromEnd]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\RemoveTests.cpp:36]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayRemoveStandalone.RemoveOnlyElement]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayRemoveStandalone.RemoveOnlyElement]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayRemoveStandalone.RemoveOnlyElement]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\RemoveTests.cpp:47]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayRemoveStandalone.RemoveFromEmptyThrows]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayRemoveStandalone.RemoveFromEmptyThrows]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayRemoveStandalone.RemoveFromEmptyThrows]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\RemoveTests.cpp:57]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayRemoveStandalone.RemoveNegativeIndexThrows]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayRemoveStandalone.RemoveNegativeIndexThrows]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayRemoveStandalone.RemoveNegativeIndexThrows]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\RemoveTests.cpp:64]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayRemoveStandalone.RemovePastEndThrows]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayRemoveStandalone.RemovePastEndThrows]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayRemoveStandalone.RemovePastEndThrows]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\RemoveTests.cpp:72]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[DynamicArrayRemoveStandalone.RemoveLargeDataset]=]  [==[D:/Git pull/STL-Library/build/Tests.exe]==] [==[--gtest_filter=DynamicArrayRemoveStandalone.RemoveLargeDataset]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DynamicArrayRemoveStandalone.RemoveLargeDataset]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[D:\Git pull\STL-Library\tests\DynamicArray\RemoveTests.cpp:82]==]
+    WORKING_DIRECTORY [==[D:/Git pull/STL-Library/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+set(Tests_TESTS [==[RedisLiteToLowerTest.ConvertUpperCase]==] [==[RedisLiteToLowerTest.MixedCase]==] [==[RedisLiteToLowerTest.AlreadyLowerCase]==] [==[RedisLiteSizeTest.EmptyDatabase]==] [==[RedisLiteSizeTest.AfterInsertion]==] [==[RedisLiteSizeTest.AfterDeletion]==] [==[RedisLiteGetTest.ExistingKey]==] [==[RedisLiteGetTest.NonExistingKey]==] [==[RedisLiteExistsTest.NonExistingKey]==] [==[RedisLiteExistsTest.ExistingKey]==] [==[RedisLiteDeleteTest.DeleteExistingKey]==] [==[RedisLiteDeleteTest.DeleteNonExistingKey]==] [==[RedisLiteClearTest.ClearDatabase]==] [==[RedisLiteClearTest.ClearEmptyDatabase]==] [==[RedisLiteSetTest.SetSingleKey]==] [==[RedisLiteSetTest.SetMultipleKeys]==] [==[RedisLiteSetTest.UpdateExistingKey]==] [==[RedisLiteSetTest.SameKey]==] [==[RedisLiteConstructorTest.DefaultConstructor]==] [==[HashMapGetTest.GetSingleElement]==] [==[HashMapGetTest.GetMultipleElements]==] [==[HashMapGetTest.GetUpdatedValue]==] [==[HashMapGetTest.GetNegativeKey]==] [==[HashMapGetTest.GetZeroKey]==] [==[HashMapGetTest.GetStringKey]==] [==[HashMapGetTest.GetLargeIntegerKeys]==] [==[HashMapGetTest.GetEmptyStringKey]==] [==[HashMapGetTest.GetAfterRehash]==] [==[HashMapGetTest.GetNonExistingKeyThrows]==] [==[HashMapGetTest.GetAfterRemoveThrows]==] [==[HashMapGetTest.GetFromEmptyMapThrows]==] [==[HashMapGetTest.GetMissingKeyAmongExistingKeysThrows]==] [==[HashMapGetTest.GetDoesNotModifyMap]==] [==[HashMapSizeTest.EmptyMapSizeIsZero]==] [==[HashMapSizeTest.SizeAfterSingleInsert]==] [==[HashMapSizeTest.SizeAfterMultipleInserts]==] [==[HashMapSizeTest.DuplicateKeyDoesNotIncreaseSize]==] [==[HashMapSizeTest.SizeAfterRemove]==] [==[HashMapSizeTest.SizeAfterClear]==] [==[HashMapCapacityTest.DefaultCapacity]==] [==[HashMapCapacityTest.CustomCapacity]==] [==[HashMapCapacityTest.CapacityAfterInsertWithoutRehash]==] [==[HashMapCapacityTest.CapacityAfterRehash]==] [==[HashMapRehashTest.CapacityDoublesAfterThreshold]==] [==[HashMapRehashTest.AllElementsRemainAfterRehash]==] [==[HashMapRehashTest.LoadFactorAfterRehash]==] [==[HashMapRehashTest.DuplicateKeyDoesNotTriggerExtraRehash]==] [==[HashMapRehashTest.MultipleRehashes]==] [==[HashMapRehashTest.RehashPreservesUpdatedValues]==] [==[HashMapRehashTest.RehashPreservesNegativeKeys]==] [==[HashMapRehashTest.RehashPreservesZeroKey]==] [==[HashMapRehashTest.RehashDoesNotChangeSize]==] [==[HashMapRehashTest.CapacityDoesNotGrowBeforeThreshold]==] [==[HashMapRehashTest.InsertWorksAfterRehash]==] [==[HashMapRehashTest.ConsecutiveRehashesPreserveData]==] [==[HashMapClearTest.ClearEmptyMap]==] [==[HashMapClearTest.ClearAfterSingleInsert]==] [==[HashMapClearTest.ClearAfterMultipleInserts]==] [==[HashMapClearTest.InsertAfterClear]==] [==[HashMapClearTest.CapacityRemainsSameAfterClear]==] [==[HashMapLoadFactorTest.EmptyMap]==] [==[HashMapLoadFactorTest.OneElement]==] [==[HashMapLoadFactorTest.MultipleElements]==] [==[HashMapLoadFactorTest.DuplicateKeyDoesNotChangeLoadFactor]==] [==[HashMapLoadFactorTest.LoadFactorAfterRemove]==] [==[HashMapLoadFactorTest.LoadFactorAfterClear]==] [==[HashMapExistsTest.ExistingKeyReturnsTrue]==] [==[HashMapExistsTest.NonExistingKeyReturnsFalse]==] [==[HashMapExistsTest.EmptyMapReturnsFalse]==] [==[HashMapExistsTest.NegativeKey]==] [==[HashMapExistsTest.ZeroKey]==] [==[HashMapExistsTest.AfterRemoveReturnsFalse]==] [==[HashMapExistsTest.MultipleElements]==] [==[HashMapExistsTest.StringKeys]==] [==[HashMapExistsTest.DuplicateInsertStillExists]==] [==[HashMapRemoveTest.RemoveExistingKey]==] [==[HashMapRemoveTest.RemoveFromMultipleElements]==] [==[HashMapRemoveTest.RemoveFirstInsertedElement]==] [==[HashMapRemoveTest.RemoveLastInsertedElement]==] [==[HashMapRemoveTest.RemoveMiddleElement]==] [==[HashMapRemoveTest.RemoveNegativeKey]==] [==[HashMapRemoveTest.RemoveZeroKey]==] [==[HashMapRemoveTest.RemoveNonExistingKey]==] [==[HashMapRemoveTest.RemoveFromEmptyMap]==] [==[HashMapRemoveTest.RemoveAllElements]==] [==[HashMapInsertTest.InsertSingleElement]==] [==[HashMapInsertTest.InsertMultipleElements]==] [==[HashMapInsertTest.InsertDuplicateKeyUpdatesValue]==] [==[HashMapInsertTest.InsertNegativeKey]==] [==[HashMapInsertTest.InsertZeroKey]==] [==[HashMapInsertTest.InsertManyElements]==] [==[HashMapInsertTest.InsertStringKeys]==] [==[HashMapInsertTest.InsertAfterDuplicateUpdatesOnlyValue]==] [==[HashMapInsertTest.InsertMaintainsOtherElements]==] [==[HashMapInsertTest.InsertTriggersRehash]==] [==[HashMapInsertTest.InsertLargeIntegerKeys]==] [==[HashMapInsertTest.InsertEmptyStringKey]==] [==[HashMapInsertTest.InsertEmptyStringValue]==] [==[HashMapInsertTest.InsertAfterRehash]==] [==[HashMapInsertTest.InsertSameValueDifferentKeys]==] [==[HashMapConstructorTest.DefaultConstructorInitializesEmptyMap]==] [==[HashMapConstructorTest.ConstructorCreatesIndependentObjects]==] [==[HashMapConstructorTest.EmptyMapDoesNotContainAnyKey]==] [==[HashMapConstructorTest.EmptyMapThrowsOnGet]==] [==[HashMapConstructorTest.ConstructorWorksForDifferentKeyValueTypes]==] [==[LinkedListExistsTest.ExistingElement]==] [==[LinkedListExistsTest.NonExistingElement]==] [==[LinkedListExistsTest.EmptyList]==] [==[LinkedListExistsTest.FirstElementExists]==] [==[LinkedListExistsTest.LastElementExists]==] [==[LinkedListLengthTest.InitiallyZero]==] [==[LinkedListLengthTest.AfterInsertions]==] [==[LinkedListLengthTest.AfterRemoval]==] [==[LinkedListLengthTest.AfterClear]==] [==[LinkedListReverseTest.ReverseEmptyList]==] [==[LinkedListReverseTest.ReverseSingleElement]==] [==[LinkedListReverseTest.ReverseMultipleElements]==] [==[LinkedListReverseTest.ReverseTwiceReturnsOriginal]==] [==[LinkedListPopTest.PopLastElement]==] [==[LinkedListPopTest.PopUntilEmpty]==] [==[LinkedListPopTest.PopSingleElement]==] [==[LinkedListPopTest.PopFromEmptyList]==] [==[LinkedListAppendTest.AppendSingleElement]==] [==[LinkedListAppendTest.AppendMultipleElements]==] [==[LinkedListAppendTest.TailUpdatesCorrectly]==] [==[LinkedListAppendTest.AppendAfterClear]==] [==[LinkedListAppendTest.AppendLargeDataset]==] [==[LinkedListInsertTest.InsertAtBeginning]==] [==[LinkedListInsertTest.InsertAtMiddle]==] [==[LinkedListInsertTest.InsertAtEnd]==] [==[LinkedListInsertTest.InsertIntoEmptyList]==] [==[LinkedListInsertTest.InvalidNegativeIndex]==] [==[LinkedListInsertTest.InvalidLargeIndex]==] [==[LinkedListRemoveTest.RemoveHead]==] [==[LinkedListRemoveTest.RemoveMiddle]==] [==[LinkedListRemoveTest.RemoveTail]==] [==[LinkedListRemoveTest.RemoveOnlyElement]==] [==[LinkedListRemoveTest.RemoveNonExistingElement]==] [==[LinkedListRemoveTest.RemoveFromEmptyList]==] [==[LinkedListRemoveTest.RemoveFirstOccurrenceOnly]==] [==[LinkedListEqualityOperatorTest.EqualLists]==] [==[LinkedListEqualityOperatorTest.DifferentSizes]==] [==[LinkedListEqualityOperatorTest.DifferentValues]==] [==[LinkedListEqualityOperatorTest.EmptyLists]==] [==[LinkedListEqualityOperatorTest.OneEmptyOneNonEmpty]==] [==[LinkedListAssignmentOperatorTest.AssignPopulatedList]==] [==[LinkedListAssignmentOperatorTest.AssignEmptyList]==] [==[LinkedListAssignmentOperatorTest.SelfAssignment]==] [==[LinkedListAssignmentOperatorTest.DeepCopyVerification]==] [==[LinkedListAssignmentOperatorTest.OverwriteExistingList]==] [==[LinkedListInsertHeadTest.InsertSingleElement]==] [==[LinkedListInsertHeadTest.InsertMultipleElements]==] [==[LinkedListInsertHeadTest.TailRemainsFirstInsertedElement]==] [==[LinkedListInsertHeadTest.HeadChangesAfterEveryInsertion]==] [==[LinkedListInsertHeadTest.InsertAfterClear]==] [==[DynamicArrayCopyAssignmentTest.NormalAssignment]==] [==[DynamicArrayCopyAssignmentTest.SelfAssignment]==] [==[DynamicArrayCopyAssignmentTest.DeepCopy]==] [==[DynamicArrayCopyConstructorTest.DeepCopy]==] [==[DynamicArrayCopyConstructorTest.ModifyOriginal]==] [==[DynamicArrayCopyConstructorTest.EmptyArray]==] [==[DynamicArrayConstructorTest.DefaultConstructor]==] [==[DynamicArrayConstructorTest.CapacityValueConstructor]==] [==[DynamicArrayConstructorTest.CapacityOne]==] [==[DynamicArrayClearTest.ClearArray]==] [==[DynamicArrayClearTest.ClearEmptyArray]==] [==[DynamicArrayClearTest.ReuseAfterClear]==] [==[DynamicArrayCapacityTest.DefaultCapacity]==] [==[DynamicArrayCapacityTest.CapacityGrows]==] [==[DynamicArrayCapacityTest.CapacityAfterClear]==] [==[DynamicArraySizeTest.InitiallyZero]==] [==[DynamicArraySizeTest.SizeAfterInsertions]==] [==[DynamicArraySizeTest.SizeAfterRemoval]==] [==[DynamicArrayPopBackTest.RemoveLastElement]==] [==[DynamicArrayPopBackTest.RemoveAllElements]==] [==[DynamicArrayPopBackStandalone.PopFromEmptyThrows]==] [==[DynamicArrayPushBackTest.PushSingleElement]==] [==[DynamicArrayPushBackTest.PushMultipleElements]==] [==[DynamicArrayPushBackTest.PushTriggersResize]==] [==[DynamicArrayPushBackTest.PushLargeDataset]==] [==[DynamicArrayInsertTest.InsertAtBeginning]==] [==[DynamicArrayInsertTest.InsertAtMiddle]==] [==[DynamicArrayInsertTest.InsertAtEnd]==] [==[DynamicArrayInsertStandalone.InsertIntoEmptyArray]==] [==[DynamicArrayInsertStandalone.InsertTriggersResize]==] [==[DynamicArrayInsertStandalone.InsertNegativeIndexThrows]==] [==[DynamicArrayInsertStandalone.InsertPastEndThrows]==] [==[DynamicArrayInsertStandalone.InsertLargeDataset]==] [==[DynamicArrayRemoveTest.RemoveFromBeginning]==] [==[DynamicArrayRemoveTest.RemoveFromMiddle]==] [==[DynamicArrayRemoveTest.RemoveFromEnd]==] [==[DynamicArrayRemoveStandalone.RemoveOnlyElement]==] [==[DynamicArrayRemoveStandalone.RemoveFromEmptyThrows]==] [==[DynamicArrayRemoveStandalone.RemoveNegativeIndexThrows]==] [==[DynamicArrayRemoveStandalone.RemovePastEndThrows]==] [==[DynamicArrayRemoveStandalone.RemoveLargeDataset]==])

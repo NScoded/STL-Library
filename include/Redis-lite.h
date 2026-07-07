@@ -8,11 +8,12 @@ class Redis_lite{
     void run();
     HashMap<K,V>database;
     bool set(const K& key, const V& value);
-    bool get(const K& key);
+    V get(const K& key);
     bool del(const K& key);
     bool exists(const K& key);
     bool clear();
     size_t size() const;
+
     std::string To_lower(std::string s);
     
     Redis_lite();

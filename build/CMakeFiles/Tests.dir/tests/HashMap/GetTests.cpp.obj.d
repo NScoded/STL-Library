@@ -247,4 +247,6 @@ CMakeFiles/Tests.dir/tests/HashMap/GetTests.cpp.obj: \
  D:/Git\ pull/STL-Library/include/LinkedList.h \
  D:/Git\ pull/STL-Library/src/LinkedList/LinkedList.tpp \
  D:/Git\ pull/STL-Library/include/MyHash.h \
- D:/Git\ pull/STL-Library/src/HashMap/HashMap.tpp
+ C:/msys64/ucrt64/include/c++/15.2.0/cstring \
+ D:/Git\ pull/STL-Library/src/HashMap/HashMap.tpp \
+ C:/msys64/ucrt64/include/c++/15.2.0/climits

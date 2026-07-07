@@ -9,7 +9,7 @@ TEST(LinkedListRemoveTest, RemoveHead)
     list.append(20);
     list.append(30);
 
-    list.remove(10);
+    list.remove(0);
 
     EXPECT_EQ(list.length(), 2);
     EXPECT_EQ(list.head->data, 20);
@@ -24,7 +24,7 @@ TEST(LinkedListRemoveTest, RemoveMiddle)
     list.append(20);
     list.append(30);
 
-    list.remove(20);
+    list.remove(1);
 
     EXPECT_EQ(list.length(), 2);
     EXPECT_EQ(list.head->data, 10);
@@ -40,7 +40,7 @@ TEST(LinkedListRemoveTest, RemoveTail)
     list.append(20);
     list.append(30);
 
-    list.remove(30);
+    list.remove(2);
 
     EXPECT_EQ(list.length(), 2);
     EXPECT_EQ(list.head->data, 10);
@@ -54,7 +54,7 @@ TEST(LinkedListRemoveTest, RemoveOnlyElement)
 
     list.append(100);
 
-    list.remove(100);
+    list.remove(0);
 
     EXPECT_EQ(list.length(), 0);
     EXPECT_EQ(list.head, nullptr);
@@ -69,22 +69,14 @@ TEST(LinkedListRemoveTest, RemoveNonExistingElement)
     list.append(20);
     list.append(30);
 
-    list.remove(50);
-
-    EXPECT_EQ(list.length(), 3);
-    EXPECT_EQ(list.head->data, 10);
-    EXPECT_EQ(list.tail->data, 30);
+    EXPECT_THROW(list.remove(50),std::out_of_range);
 }
 
 TEST(LinkedListRemoveTest, RemoveFromEmptyList)
 {
     LinkedList<int> list;
 
-    list.remove(10);
-
-    EXPECT_EQ(list.length(), 0);
-    EXPECT_EQ(list.head, nullptr);
-    EXPECT_EQ(list.tail, nullptr);
+    EXPECT_THROW(list.remove(0),std::out_of_range);
 }
 
 TEST(LinkedListRemoveTest, RemoveFirstOccurrenceOnly)
@@ -96,7 +88,7 @@ TEST(LinkedListRemoveTest, RemoveFirstOccurrenceOnly)
     list.append(20);
     list.append(30);
 
-    list.remove(20);
+    list.remove(1);
 
     EXPECT_EQ(list.length(), 3);
 

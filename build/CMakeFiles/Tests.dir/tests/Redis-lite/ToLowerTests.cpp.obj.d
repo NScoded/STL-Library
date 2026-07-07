@@ -248,5 +248,6 @@ CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.obj: \
  D:/Git\ pull/STL-Library/include/LinkedList.h \
  D:/Git\ pull/STL-Library/src/LinkedList/LinkedList.tpp \
  D:/Git\ pull/STL-Library/include/MyHash.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/cstring \
  D:/Git\ pull/STL-Library/src/HashMap/HashMap.tpp \
  D:/Git\ pull/STL-Library/src/Redis-lite/Redis-lite.tpp

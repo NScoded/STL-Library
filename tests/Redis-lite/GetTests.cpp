@@ -7,12 +7,13 @@ TEST(RedisLiteGetTest, ExistingKey)
 
     redis.set("name", "Nilesh");
 
-    EXPECT_TRUE(redis.get("name"));
+    EXPECT_EQ(redis.get("name"),"Nilesh");
 }
 
 TEST(RedisLiteGetTest, NonExistingKey)
 {
     Redis_lite<std::string, std::string> redis;
 
-    EXPECT_FALSE(redis.get("age"));
+    EXPECT_THROW(redis.get("age"),std::out_of_range);
 }
+

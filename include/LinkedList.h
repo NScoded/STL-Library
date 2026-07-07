@@ -28,7 +28,7 @@ template<typename T>class LinkedList{
     LinkedList& operator=(const LinkedList& other); // Handling assignment operator
     bool operator==(const LinkedList<T>& other) const;
     void insertHead(T value); //Insert value at front
-    void remove(T val); // Delete value
+    void remove(int index); // Delete value
     void insert(int pos, T value); //Insert value at given position
     void append(T value); // Add element at last
     void pop();// Delete last element

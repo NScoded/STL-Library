@@ -13,6 +13,66 @@
 },
 {
   "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\DynamicArray\\RemoveTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\DynamicArray\\RemoveTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/DynamicArray/RemoveTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/DynamicArray/RemoveTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\DynamicArray\\InsertTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\DynamicArray\\InsertTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/DynamicArray/InsertTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/DynamicArray/InsertTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\DynamicArray\\PushBackTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\DynamicArray\\PushBackTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/DynamicArray/PushBackTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/DynamicArray/PushBackTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\DynamicArray\\PopBackTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\DynamicArray\\PopBackTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/DynamicArray/PopBackTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/DynamicArray/PopBackTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\DynamicArray\\SizeTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\DynamicArray\\SizeTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/DynamicArray/SizeTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/DynamicArray/SizeTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\DynamicArray\\CapacityTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\DynamicArray\\CapacityTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/DynamicArray/CapacityTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/DynamicArray/CapacityTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\DynamicArray\\ClearTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\DynamicArray\\ClearTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/DynamicArray/ClearTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/DynamicArray/ClearTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\DynamicArray\\ConstructorTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\DynamicArray\\ConstructorTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/DynamicArray/ConstructorTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/DynamicArray/ConstructorTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\DynamicArray\\CopyConstructorTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\DynamicArray\\CopyConstructorTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/DynamicArray/CopyConstructorTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/DynamicArray/CopyConstructorTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\DynamicArray\\CopyAssignmentTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\DynamicArray\\CopyAssignmentTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/DynamicArray/CopyAssignmentTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/DynamicArray/CopyAssignmentTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
   "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\LinkedList\\InsertHeadTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\LinkedList\\InsertHeadTests.cpp\"",
   "file": "D:/Git pull/STL-Library/tests/LinkedList/InsertHeadTests.cpp",
   "output": "CMakeFiles/Tests.dir/tests/LinkedList/InsertHeadTests.cpp.obj"

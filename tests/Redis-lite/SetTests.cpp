@@ -31,4 +31,13 @@ TEST(RedisLiteSetTest, UpdateExistingKey)
 
     EXPECT_EQ(redis.size(), 1);
     EXPECT_TRUE(redis.exists("name"));
+};
+
+TEST(RedisLiteSetTest,SameKey){
+    Redis_lite<std::string,std::string>redis;
+
+    redis.set("name","Nilesh");
+    redis.set("name","Ashish");
+
+    EXPECT_EQ(redis.get("name"),"Ashish");
 }

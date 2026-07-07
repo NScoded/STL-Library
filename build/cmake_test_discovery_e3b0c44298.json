@@ -1,5 +1,5 @@
 {
-  "tests": 135,
+  "tests": 196,
   "name": "AllTests",
   "testsuites": [
     {
@@ -110,7 +110,7 @@
     },
     {
       "name": "RedisLiteSetTest",
-      "tests": 3,
+      "tests": 4,
       "testsuite": [
         {
           "name": "SetSingleKey",
@@ -126,6 +126,11 @@
           "name": "UpdateExistingKey",
           "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\SetTests.cpp",
           "line": 25
+        },
+        {
+          "name": "SameKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\SetTests.cpp",
+          "line": 36
         }
       ]
     },
@@ -142,47 +147,77 @@
     },
     {
       "name": "HashMapGetTest",
-      "tests": 8,
+      "tests": 14,
       "testsuite": [
         {
           "name": "GetSingleElement",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
-          "line": 5
+          "line": 9
         },
         {
           "name": "GetMultipleElements",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
-          "line": 14
+          "line": 21
         },
         {
           "name": "GetUpdatedValue",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
-          "line": 27
+          "line": 37
         },
         {
           "name": "GetNegativeKey",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
-          "line": 37
+          "line": 50
         },
         {
           "name": "GetZeroKey",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
-          "line": 46
+          "line": 62
         },
         {
           "name": "GetStringKey",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
-          "line": 55
+          "line": 74
+        },
+        {
+          "name": "GetLargeIntegerKeys",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 88
+        },
+        {
+          "name": "GetEmptyStringKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 102
+        },
+        {
+          "name": "GetAfterRehash",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 114
         },
         {
           "name": "GetNonExistingKeyThrows",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
-          "line": 66
+          "line": 128
         },
         {
           "name": "GetAfterRemoveThrows",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
-          "line": 73
+          "line": 138
+        },
+        {
+          "name": "GetFromEmptyMapThrows",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 151
+        },
+        {
+          "name": "GetMissingKeyAmongExistingKeysThrows",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 161
+        },
+        {
+          "name": "GetDoesNotModifyMap",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetTests.cpp",
+          "line": 175
         }
       ]
     },
@@ -250,32 +285,67 @@
     },
     {
       "name": "HashMapRehashTest",
-      "tests": 5,
+      "tests": 12,
       "testsuite": [
         {
           "name": "CapacityDoublesAfterThreshold",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
-          "line": 4
+          "line": 7
         },
         {
           "name": "AllElementsRemainAfterRehash",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
-          "line": 16
+          "line": 22
         },
         {
           "name": "LoadFactorAfterRehash",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
-          "line": 32
+          "line": 41
         },
         {
           "name": "DuplicateKeyDoesNotTriggerExtraRehash",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
-          "line": 42
+          "line": 54
         },
         {
           "name": "MultipleRehashes",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
-          "line": 54
+          "line": 69
+        },
+        {
+          "name": "RehashPreservesUpdatedValues",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
+          "line": 87
+        },
+        {
+          "name": "RehashPreservesNegativeKeys",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
+          "line": 103
+        },
+        {
+          "name": "RehashPreservesZeroKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
+          "line": 119
+        },
+        {
+          "name": "RehashDoesNotChangeSize",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
+          "line": 134
+        },
+        {
+          "name": "CapacityDoesNotGrowBeforeThreshold",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
+          "line": 147
+        },
+        {
+          "name": "InsertWorksAfterRehash",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
+          "line": 160
+        },
+        {
+          "name": "ConsecutiveRehashesPreserveData",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\RehashTests.cpp",
+          "line": 176
         }
       ]
     },
@@ -455,52 +525,82 @@
     },
     {
       "name": "HashMapInsertTest",
-      "tests": 9,
+      "tests": 15,
       "testsuite": [
         {
           "name": "InsertSingleElement",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
-          "line": 5
+          "line": 8
         },
         {
           "name": "InsertMultipleElements",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
-          "line": 16
+          "line": 22
         },
         {
           "name": "InsertDuplicateKeyUpdatesValue",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
-          "line": 31
+          "line": 40
         },
         {
           "name": "InsertNegativeKey",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
-          "line": 42
+          "line": 54
         },
         {
           "name": "InsertZeroKey",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
-          "line": 52
+          "line": 67
         },
         {
           "name": "InsertManyElements",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
-          "line": 62
+          "line": 80
         },
         {
           "name": "InsertStringKeys",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
-          "line": 80
+          "line": 99
         },
         {
           "name": "InsertAfterDuplicateUpdatesOnlyValue",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
-          "line": 92
+          "line": 114
         },
         {
           "name": "InsertMaintainsOtherElements",
           "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
-          "line": 104
+          "line": 129
+        },
+        {
+          "name": "InsertTriggersRehash",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 148
+        },
+        {
+          "name": "InsertLargeIntegerKeys",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 165
+        },
+        {
+          "name": "InsertEmptyStringKey",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 179
+        },
+        {
+          "name": "InsertEmptyStringValue",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 192
+        },
+        {
+          "name": "InsertAfterRehash",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 205
+        },
+        {
+          "name": "InsertSameValueDifferentKeys",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\InsertTests.cpp",
+          "line": 221
         }
       ]
     },
@@ -743,12 +843,12 @@
         {
           "name": "RemoveFromEmptyList",
           "file": "D:\\Git pull\\STL-Library\\tests\\LinkedList\\RemoveTests.cpp",
-          "line": 79
+          "line": 75
         },
         {
           "name": "RemoveFirstOccurrenceOnly",
           "file": "D:\\Git pull\\STL-Library\\tests\\LinkedList\\RemoveTests.cpp",
-          "line": 90
+          "line": 82
         }
       ]
     },
@@ -842,6 +942,289 @@
           "name": "InsertAfterClear",
           "file": "D:\\Git pull\\STL-Library\\tests\\LinkedList\\InsertHeadTests.cpp",
           "line": 61
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayCopyAssignmentTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "NormalAssignment",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\CopyAssignmentTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "SelfAssignment",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\CopyAssignmentTests.cpp",
+          "line": 22
+        },
+        {
+          "name": "DeepCopy",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\CopyAssignmentTests.cpp",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayCopyConstructorTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "DeepCopy",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\CopyConstructorTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "ModifyOriginal",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\CopyConstructorTests.cpp",
+          "line": 20
+        },
+        {
+          "name": "EmptyArray",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\CopyConstructorTests.cpp",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayConstructorTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "DefaultConstructor",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\ConstructorTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "CapacityValueConstructor",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\ConstructorTests.cpp",
+          "line": 12
+        },
+        {
+          "name": "CapacityOne",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\ConstructorTests.cpp",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayClearTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "ClearArray",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\ClearTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "ClearEmptyArray",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\ClearTests.cpp",
+          "line": 16
+        },
+        {
+          "name": "ReuseAfterClear",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\ClearTests.cpp",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayCapacityTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "DefaultCapacity",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\CapacityTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "CapacityGrows",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\CapacityTests.cpp",
+          "line": 11
+        },
+        {
+          "name": "CapacityAfterClear",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\CapacityTests.cpp",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "name": "DynamicArraySizeTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "InitiallyZero",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\SizeTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "SizeAfterInsertions",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\SizeTests.cpp",
+          "line": 11
+        },
+        {
+          "name": "SizeAfterRemoval",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\SizeTests.cpp",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayPopBackTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "RemoveLastElement",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\PopBackTests.cpp",
+          "line": 17
+        },
+        {
+          "name": "RemoveAllElements",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\PopBackTests.cpp",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayPopBackStandalone",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "PopFromEmptyThrows",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\PopBackTests.cpp",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayPushBackTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "PushSingleElement",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\PushBackTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "PushMultipleElements",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\PushBackTests.cpp",
+          "line": 14
+        },
+        {
+          "name": "PushTriggersResize",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\PushBackTests.cpp",
+          "line": 27
+        },
+        {
+          "name": "PushLargeDataset",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\PushBackTests.cpp",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayInsertTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "InsertAtBeginning",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\InsertTests.cpp",
+          "line": 16
+        },
+        {
+          "name": "InsertAtMiddle",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\InsertTests.cpp",
+          "line": 29
+        },
+        {
+          "name": "InsertAtEnd",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\InsertTests.cpp",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayInsertStandalone",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "InsertIntoEmptyArray",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\InsertTests.cpp",
+          "line": 50
+        },
+        {
+          "name": "InsertTriggersResize",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\InsertTests.cpp",
+          "line": 59
+        },
+        {
+          "name": "InsertNegativeIndexThrows",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\InsertTests.cpp",
+          "line": 80
+        },
+        {
+          "name": "InsertPastEndThrows",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\InsertTests.cpp",
+          "line": 86
+        },
+        {
+          "name": "InsertLargeDataset",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\InsertTests.cpp",
+          "line": 94
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayRemoveTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "RemoveFromBeginning",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\RemoveTests.cpp",
+          "line": 14
+        },
+        {
+          "name": "RemoveFromMiddle",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\RemoveTests.cpp",
+          "line": 25
+        },
+        {
+          "name": "RemoveFromEnd",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\RemoveTests.cpp",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayRemoveStandalone",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "RemoveOnlyElement",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\RemoveTests.cpp",
+          "line": 47
+        },
+        {
+          "name": "RemoveFromEmptyThrows",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\RemoveTests.cpp",
+          "line": 57
+        },
+        {
+          "name": "RemoveNegativeIndexThrows",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\RemoveTests.cpp",
+          "line": 64
+        },
+        {
+          "name": "RemovePastEndThrows",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\RemoveTests.cpp",
+          "line": 72
+        },
+        {
+          "name": "RemoveLargeDataset",
+          "file": "D:\\Git pull\\STL-Library\\tests\\DynamicArray\\RemoveTests.cpp",
+          "line": 82
         }
       ]
     }
