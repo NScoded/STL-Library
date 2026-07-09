@@ -13,6 +13,7 @@ class Redis_lite{
     bool exists(const K& key);
     bool clear();
     size_t size() const;
+    DynamicArray<K> getKeys();
 
     std::string To_lower(std::string s);
     

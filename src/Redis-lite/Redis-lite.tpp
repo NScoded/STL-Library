@@ -10,7 +10,7 @@ using namespace std;
 // Run
 template<typename K,typename V> void Redis_lite<K,V>::run(){
     cout<<"---------- Redis-Lite Database server stated ----------\n";
-    cout<<"Methods availabe\nSET _ _\nGET _\nEXISTS _\nDEL _\nCLEAR \nSIZE\nEXIT\n";
+    cout<<"Methods availabe\nSET _ _\nGET _\nEXISTS _\nDEL _\nCLEAR \nSIZE\nKEYS\nEXIT\n";
     cout<<"-------------------------------------------------------\n";
     while(true){
         string input;
@@ -58,6 +58,10 @@ template<typename K,typename V> void Redis_lite<K,V>::run(){
 
         }
 
+        else if (method=="keys"){
+            getKeys();
+            
+        }
         else if (method=="exit"){
             cout<<"Good Bye...";
             break;
@@ -73,7 +77,7 @@ template<typename K,typename V> void Redis_lite<K,V>::run(){
 
 // Constructor
 template<typename K,typename V> Redis_lite<K,V>::Redis_lite(){
-    // run();
+    run();
 }
 
 // To_lower()
@@ -147,3 +151,12 @@ template<typename K,typename V> size_t Redis_lite<K,V>::size()const{
     return database.size();
 }
 
+template<typename K,typename V>
+DynamicArray<K> Redis_lite<K,V> :: getKeys(){
+    DynamicArray<K>keys;
+    keys=database.getkeys();
+    for(int i=0;i<keys.size();i++){
+        cout<<keys[i]<<endl;
+    }
+    return keys;
+}
