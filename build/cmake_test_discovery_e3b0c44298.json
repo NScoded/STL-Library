@@ -1,5 +1,5 @@
 {
-  "tests": 196,
+  "tests": 201,
   "name": "AllTests",
   "testsuites": [
     {
@@ -142,6 +142,37 @@
           "name": "DefaultConstructor",
           "file": "D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ConstructorTests.cpp",
           "line": 4
+        }
+      ]
+    },
+    {
+      "name": "HashMapGetKeysTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "EmptyHashMap",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetKeysTests.cpp",
+          "line": 4
+        },
+        {
+          "name": "SingleElement",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetKeysTests.cpp",
+          "line": 13
+        },
+        {
+          "name": "MultipleElements",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetKeysTests.cpp",
+          "line": 25
+        },
+        {
+          "name": "DuplicateInsertUpdatesValue",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetKeysTests.cpp",
+          "line": 53
+        },
+        {
+          "name": "IntegerKeys",
+          "file": "D:\\Git pull\\STL-Library\\tests\\HashMap\\GetKeysTests.cpp",
+          "line": 66
         }
       ]
     },

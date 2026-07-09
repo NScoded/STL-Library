@@ -65,6 +65,7 @@ add_executable(Tests
     tests/HashMap/CapacityTests.cpp
     tests/HashMap/SizeTests.cpp
     tests/HashMap/GetTests.cpp
+    tests/HashMap/GetKeysTests.cpp
     
 
     tests/Redis-lite/ConstructorTests.cpp

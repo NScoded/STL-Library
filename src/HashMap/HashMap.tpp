@@ -239,3 +239,21 @@ void HashMap<K,V>::rehash()
         throw;
     }
 }
+
+// Get all keys
+template<typename K, typename V>
+DynamicArray<K> HashMap<K,V>::getkeys() {
+    DynamicArray<K> keys;
+
+    for (int i = 0; i < buckets.size(); i++) {
+
+        typename LinkedList<Pair>::Node* curr = buckets[i].head;
+
+        while (curr != nullptr) {
+            keys.push_back(curr->data.key);
+            curr = curr->next;
+        }
+    }
+
+    return keys;
+}

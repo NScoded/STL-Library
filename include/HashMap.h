@@ -33,6 +33,7 @@ class HashMap {
     V& get(const K& key);
     int size() const;
     int capacity() const;
+    DynamicArray<K>getkeys();
     float loadFactor() const;
     void clear();
 };

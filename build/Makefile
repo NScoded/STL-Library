@@ -608,6 +608,30 @@ tests/HashMap/ExistsTests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/HashMap/ExistsTests.cpp.s
 .PHONY : tests/HashMap/ExistsTests.cpp.s
 
+tests/HashMap/GetKeysTests.obj: tests/HashMap/GetKeysTests.cpp.obj
+.PHONY : tests/HashMap/GetKeysTests.obj
+
+# target to build an object file
+tests/HashMap/GetKeysTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.obj
+.PHONY : tests/HashMap/GetKeysTests.cpp.obj
+
+tests/HashMap/GetKeysTests.i: tests/HashMap/GetKeysTests.cpp.i
+.PHONY : tests/HashMap/GetKeysTests.i
+
+# target to preprocess a source file
+tests/HashMap/GetKeysTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.i
+.PHONY : tests/HashMap/GetKeysTests.cpp.i
+
+tests/HashMap/GetKeysTests.s: tests/HashMap/GetKeysTests.cpp.s
+.PHONY : tests/HashMap/GetKeysTests.s
+
+# target to generate assembly for a file
+tests/HashMap/GetKeysTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tests.dir\build.make CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.s
+.PHONY : tests/HashMap/GetKeysTests.cpp.s
+
 tests/HashMap/GetTests.obj: tests/HashMap/GetTests.cpp.obj
 .PHONY : tests/HashMap/GetTests.obj
 
@@ -1272,6 +1296,9 @@ help:
 	@echo ... tests/HashMap/ExistsTests.obj
 	@echo ... tests/HashMap/ExistsTests.i
 	@echo ... tests/HashMap/ExistsTests.s
+	@echo ... tests/HashMap/GetKeysTests.obj
+	@echo ... tests/HashMap/GetKeysTests.i
+	@echo ... tests/HashMap/GetKeysTests.s
 	@echo ... tests/HashMap/GetTests.obj
 	@echo ... tests/HashMap/GetTests.i
 	@echo ... tests/HashMap/GetTests.s

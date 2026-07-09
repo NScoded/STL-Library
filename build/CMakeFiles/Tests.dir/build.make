@@ -536,11 +536,26 @@ CMakeFiles/Tests.dir/tests/HashMap/GetTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tests.dir/tests/HashMap/GetTests.cpp.s"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Git pull\STL-Library\tests\HashMap\GetTests.cpp" -o CMakeFiles\Tests.dir\tests\HashMap\GetTests.cpp.s
 
+CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.obj: CMakeFiles/Tests.dir/flags.make
+CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
+CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.obj: D:/Git\ pull/STL-Library/tests/HashMap/GetKeysTests.cpp
+CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.obj -MF CMakeFiles\Tests.dir\tests\HashMap\GetKeysTests.cpp.obj.d -o CMakeFiles\Tests.dir\tests\HashMap\GetKeysTests.cpp.obj -c "D:\Git pull\STL-Library\tests\HashMap\GetKeysTests.cpp"
+
+CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Git pull\STL-Library\tests\HashMap\GetKeysTests.cpp" > CMakeFiles\Tests.dir\tests\HashMap\GetKeysTests.cpp.i
+
+CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Git pull\STL-Library\tests\HashMap\GetKeysTests.cpp" -o CMakeFiles\Tests.dir\tests\HashMap\GetKeysTests.cpp.s
+
 CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj: CMakeFiles/Tests.dir/flags.make
 CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj: D:/Git\ pull/STL-Library/tests/Redis-lite/ConstructorTests.cpp
 CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj -MF CMakeFiles\Tests.dir\tests\Redis-lite\ConstructorTests.cpp.obj.d -o CMakeFiles\Tests.dir\tests\Redis-lite\ConstructorTests.cpp.obj -c "D:\Git pull\STL-Library\tests\Redis-lite\ConstructorTests.cpp"
 
 CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.i: cmake_force
@@ -555,7 +570,7 @@ CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj: CMakeFiles/Tests.dir/fla
 CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj: D:/Git\ pull/STL-Library/tests/Redis-lite/SetTests.cpp
 CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj -MF CMakeFiles\Tests.dir\tests\Redis-lite\SetTests.cpp.obj.d -o CMakeFiles\Tests.dir\tests\Redis-lite\SetTests.cpp.obj -c "D:\Git pull\STL-Library\tests\Redis-lite\SetTests.cpp"
 
 CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.i: cmake_force
@@ -570,7 +585,7 @@ CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj: CMakeFiles/Tests.dir/f
 CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj: D:/Git\ pull/STL-Library/tests/Redis-lite/ClearTests.cpp
 CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj -MF CMakeFiles\Tests.dir\tests\Redis-lite\ClearTests.cpp.obj.d -o CMakeFiles\Tests.dir\tests\Redis-lite\ClearTests.cpp.obj -c "D:\Git pull\STL-Library\tests\Redis-lite\ClearTests.cpp"
 
 CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.i: cmake_force
@@ -585,7 +600,7 @@ CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.obj: CMakeFiles/Tests.dir/
 CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.obj: D:/Git\ pull/STL-Library/tests/Redis-lite/DeleteTests.cpp
 CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.obj -MF CMakeFiles\Tests.dir\tests\Redis-lite\DeleteTests.cpp.obj.d -o CMakeFiles\Tests.dir\tests\Redis-lite\DeleteTests.cpp.obj -c "D:\Git pull\STL-Library\tests\Redis-lite\DeleteTests.cpp"
 
 CMakeFiles/Tests.dir/tests/Redis-lite/DeleteTests.cpp.i: cmake_force
@@ -600,7 +615,7 @@ CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.obj: CMakeFiles/Tests.dir/
 CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.obj: D:/Git\ pull/STL-Library/tests/Redis-lite/ExistsTests.cpp
 CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.obj -MF CMakeFiles\Tests.dir\tests\Redis-lite\ExistsTests.cpp.obj.d -o CMakeFiles\Tests.dir\tests\Redis-lite\ExistsTests.cpp.obj -c "D:\Git pull\STL-Library\tests\Redis-lite\ExistsTests.cpp"
 
 CMakeFiles/Tests.dir/tests/Redis-lite/ExistsTests.cpp.i: cmake_force
@@ -615,7 +630,7 @@ CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.obj: CMakeFiles/Tests.dir/fla
 CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.obj: D:/Git\ pull/STL-Library/tests/Redis-lite/GetTests.cpp
 CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.obj -MF CMakeFiles\Tests.dir\tests\Redis-lite\GetTests.cpp.obj.d -o CMakeFiles\Tests.dir\tests\Redis-lite\GetTests.cpp.obj -c "D:\Git pull\STL-Library\tests\Redis-lite\GetTests.cpp"
 
 CMakeFiles/Tests.dir/tests/Redis-lite/GetTests.cpp.i: cmake_force
@@ -630,7 +645,7 @@ CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.obj: CMakeFiles/Tests.dir/fl
 CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.obj: D:/Git\ pull/STL-Library/tests/Redis-lite/SizeTests.cpp
 CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.obj -MF CMakeFiles\Tests.dir\tests\Redis-lite\SizeTests.cpp.obj.d -o CMakeFiles\Tests.dir\tests\Redis-lite\SizeTests.cpp.obj -c "D:\Git pull\STL-Library\tests\Redis-lite\SizeTests.cpp"
 
 CMakeFiles/Tests.dir/tests/Redis-lite/SizeTests.cpp.i: cmake_force
@@ -645,7 +660,7 @@ CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.obj: CMakeFiles/Tests.dir
 CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.obj: CMakeFiles/Tests.dir/includes_CXX.rsp
 CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.obj: D:/Git\ pull/STL-Library/tests/Redis-lite/ToLowerTests.cpp
 CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.obj: CMakeFiles/Tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.obj -MF CMakeFiles\Tests.dir\tests\Redis-lite\ToLowerTests.cpp.obj.d -o CMakeFiles\Tests.dir\tests\Redis-lite\ToLowerTests.cpp.obj -c "D:\Git pull\STL-Library\tests\Redis-lite\ToLowerTests.cpp"
 
 CMakeFiles/Tests.dir/tests/Redis-lite/ToLowerTests.cpp.i: cmake_force
@@ -689,6 +704,7 @@ Tests_OBJECTS = \
 "CMakeFiles/Tests.dir/tests/HashMap/CapacityTests.cpp.obj" \
 "CMakeFiles/Tests.dir/tests/HashMap/SizeTests.cpp.obj" \
 "CMakeFiles/Tests.dir/tests/HashMap/GetTests.cpp.obj" \
+"CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.obj" \
 "CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj" \
 "CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj" \
 "CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj" \
@@ -732,6 +748,7 @@ Tests.exe: CMakeFiles/Tests.dir/tests/HashMap/RehashTests.cpp.obj
 Tests.exe: CMakeFiles/Tests.dir/tests/HashMap/CapacityTests.cpp.obj
 Tests.exe: CMakeFiles/Tests.dir/tests/HashMap/SizeTests.cpp.obj
 Tests.exe: CMakeFiles/Tests.dir/tests/HashMap/GetTests.cpp.obj
+Tests.exe: CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.obj
 Tests.exe: CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj
 Tests.exe: CMakeFiles/Tests.dir/tests/Redis-lite/SetTests.cpp.obj
 Tests.exe: CMakeFiles/Tests.dir/tests/Redis-lite/ClearTests.cpp.obj
@@ -747,7 +764,7 @@ Tests.exe: lib/libgtest.a
 Tests.exe: CMakeFiles/Tests.dir/linkLibs.rsp
 Tests.exe: CMakeFiles/Tests.dir/objects1.rsp
 Tests.exe: CMakeFiles/Tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Linking CXX executable Tests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\Git pull\STL-Library\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Linking CXX executable Tests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Tests.dir\link.txt --verbose=$(VERBOSE)
 	"C:\Program Files\CMake\bin\cmake.exe" -P "D:/Git pull/STL-Library/build/Tests_e3b0c442_discovery.cmake" -- 
 

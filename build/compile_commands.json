@@ -193,6 +193,12 @@
 },
 {
   "directory": "D:/Git pull/STL-Library/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\HashMap\\GetKeysTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\HashMap\\GetKeysTests.cpp\"",
+  "file": "D:/Git pull/STL-Library/tests/HashMap/GetKeysTests.cpp",
+  "output": "CMakeFiles/Tests.dir/tests/HashMap/GetKeysTests.cpp.obj"
+},
+{
+  "directory": "D:/Git pull/STL-Library/build",
   "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles\\Tests.dir\\includes_CXX.rsp -std=c++17 -o CMakeFiles\\Tests.dir\\tests\\Redis-lite\\ConstructorTests.cpp.obj -c \"D:\\Git pull\\STL-Library\\tests\\Redis-lite\\ConstructorTests.cpp\"",
   "file": "D:/Git pull/STL-Library/tests/Redis-lite/ConstructorTests.cpp",
   "output": "CMakeFiles/Tests.dir/tests/Redis-lite/ConstructorTests.cpp.obj"
