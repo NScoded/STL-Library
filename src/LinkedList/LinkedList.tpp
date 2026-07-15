@@ -228,11 +228,11 @@ LinkedList<T>::remove(int index){
     }
     
     if(index==0){
-        if(head==tail){
-            tail=nullptr;
-        }
         Node *temp=head;
         head=head->next;
+        if(head==nullptr){
+            tail=nullptr;
+        }
         delete temp;
         size--;
         return;
@@ -258,6 +258,7 @@ LinkedList<T>::remove(int index){
     delete nxt;
     
 }
+
 
 
 // clear
